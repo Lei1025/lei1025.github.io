@@ -32,7 +32,7 @@ style = {
 <span style={this.style}> </span>
 ```
 
-```js
+```jsx
 <span style={{fontSize: 10, fontWeight:'bold'}}></span>
 ```
 
