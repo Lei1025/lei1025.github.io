@@ -32,9 +32,11 @@ style = {
 <span style={this.style}> </span>
 ```
 
+{% raw %}
 ```jsx
 <span style={{fontSize: 10, fontWeight:'bold'}}></span>
 ```
+{% endraw %}
 
 ### Quickly create new method in render()
 ```jsx
