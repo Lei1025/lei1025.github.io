@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "React Study Notes" 
+excerpt : "nothing to say"
 date: 2019-03-01
 tags: [react, studynotes]
 comments: true
