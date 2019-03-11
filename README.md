@@ -12,6 +12,7 @@
 - [ ] Update description
 - [ ] Update social media info and icons
 - [ ] Update "About Me"
+- [ ] Update backgroud wall paper
 
 ## Post Page
 - [x] add page navigation -- prev and next
