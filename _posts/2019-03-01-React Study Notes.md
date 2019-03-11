@@ -8,7 +8,7 @@ comments: true
 
 Notes:
 
-### '<React.Fragment>'
+### `<React.Fragment>`
 
 JSX can only have one root element
 
