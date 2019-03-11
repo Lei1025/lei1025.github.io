@@ -12,7 +12,7 @@
 - [ ] Update description
 - [ ] Update social media info and icons
 - [ ] Update "About Me"
-- [ ] Update backgroud wall paper
+- [ ] Update backgroud wall paper https://codepen.io/MarcoGuglielmelli/pen/lLCxy
 
 ## Post Page
 - [x] add page navigation -- prev and next
