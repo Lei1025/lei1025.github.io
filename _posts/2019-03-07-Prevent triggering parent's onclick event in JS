@@ -2,7 +2,7 @@
 layout: post
 title: Prevent triggering parent's onclick event in JS
 excerpt: One method to disable child nodes inherit parent's onclick event in JS alone with one Js regex practice.
-date: 2019-3-7
+date: 2019-03-07
 tags: [js, javascript, regex]
 comments: true
 ---
