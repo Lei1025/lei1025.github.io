@@ -24,4 +24,4 @@
 ## What's new 
 - [ ] find a new template with time line to overwrite "Projects" page
 - [ ] Resume page
-
+- [ ] Google analysis
