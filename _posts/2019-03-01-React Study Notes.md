@@ -8,17 +8,17 @@ comments: true
 
 Notes:
 
-#### <React.Fragment>
+### '<React.Fragment>'
 
 JSX can only have one root element
 
 //只能有一个根节点，可以把所有 element 放到一个 div 里，也可以用 React.Fragment 包含起来，`<React.Fragment>`不会被 Render 到 html 里
 
-#### 'https://picsum.photos/200'
+### 'https://picsum.photos/200'
 
 Return a random picture of 200 by 200
 
-#### ClassName
+### ClassName
 
 Class--js = ClassName--jsx
 
