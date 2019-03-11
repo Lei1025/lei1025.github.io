@@ -6,7 +6,7 @@ tags: [react, studynotes]
 comments: true
 ---
 
-Notes:
+Study notes while learning React.
 
 ### `<React.Fragment>`
 
