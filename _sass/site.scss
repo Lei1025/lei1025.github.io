@@ -219,4 +219,16 @@ header .entry-meta {
         background-blend-mode: multiply;
         background-position: center center;
     }
+    .circle {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	font-size: 12px;
+	color: #222;
+	line-height: 5px;
+	text-align: center;
+	background: white;
+	display: table-cell;
+	vertical-align: middle;
+}
 }
