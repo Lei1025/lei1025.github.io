@@ -25,3 +25,4 @@
 - [ ] find a new template with time line to overwrite "Projects" page
 - [ ] Resume page
 - [ ] Google analysis
+- [ ] New Comment System - https://valine.js.org/ ★
