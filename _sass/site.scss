@@ -10,6 +10,7 @@
 
 html {
 	@extend %extend1;
+    scroll-behavior: smooth;
 }
 body {
 	@extend %extend1;
