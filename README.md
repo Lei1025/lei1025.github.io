@@ -27,4 +27,4 @@
 - [ ] Google analysis
 - [ ] New Comment System - https://valine.js.org/ ★
 - [ ] 过渡动画
-- [ ] delete RED background color while redirect to new page
+- [ ] delete RED background color while redirecting to a new page
