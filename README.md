@@ -10,6 +10,8 @@
 ## Home Page
 
 - [ ] Update description
+- [ ] Update social media info and icons
+- [ ] Update "About Me"
 
 ## Post Page
 - [x] add page navigation -- prev and next
@@ -17,3 +19,8 @@
 
 ## Tags Page
 - [ ] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
+
+## What's new 
+- [ ] find a new template with time line to overwrite "Projects" page
+- [ ] Resume page
+
