@@ -13,4 +13,7 @@
 
 ## Post Page
 - [x] add page navigation -- prev and next
-- [ ] update social media share funciton -- add wechat, weibo and 二维码 sharing
+- [ ] update social media share function -- add wechat, weibo and 二维码 sharing
+
+## Tags Page
+- [ ] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
