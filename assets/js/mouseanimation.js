@@ -17,7 +17,7 @@ $("html").prepend('<canvas id="demo-canvas"></canvas>');
 
     function initHeader() {
         width = window.innerWidth;
-        height = document.body.scrollHeight;
+        height = document.documentElement.scrollHeight;
         target = { x: width / 2, y: height / 2 };
 
         //largeHeader = document.getElementsByTagName("header")[0];
@@ -118,7 +118,7 @@ $("html").prepend('<canvas id="demo-canvas"></canvas>');
 
     function resize() {
         width = window.innerWidth;
-        height = document.body.scrollHeight;
+        height = document.documentElement.scrollHeight;
         //largeHeader.style.height = height + "px";
         canvas.width = width;
         canvas.height = height;
