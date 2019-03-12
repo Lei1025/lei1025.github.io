@@ -1,6 +1,25 @@
-$("html").prepend('<canvas id="demo-canvas"></canvas>');
+if (!detectmob()) {
+    $("html").prepend('<canvas id="demo-canvas"></canvas>');
+    main();
+}
 
-(function() {
+function detectmob() {
+    if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function main() {
     var width,
         height,
         largeHeader,
@@ -29,11 +48,17 @@ $("html").prepend('<canvas id="demo-canvas"></canvas>');
         ctx = canvas.getContext("2d");
 
         // create points
+        var xNbr, yNbr;
+        xNbr = Math.round(width / 50);
+        yNbr = Math.round(height / 50);
+
+        console.log("x:" + xNbr + ";y:" + yNbr);
+
         points = [];
-        for (var x = 0; x < width; x = x + width / 20) {
-            for (var y = 0; y < height; y = y + height / 20) {
-                var px = x + (Math.random() * width) / 20;
-                var py = y + (Math.random() * height) / 20;
+        for (var x = 0; x < width; x = x + width / xNbr) {
+            for (var y = 0; y < height; y = y + height / yNbr) {
+                var px = x + (Math.random() * width) / xNbr;
+                var py = y + (Math.random() * height) / yNbr;
                 var p = { x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
@@ -211,4 +236,4 @@ $("html").prepend('<canvas id="demo-canvas"></canvas>');
     function getDistance(p1, p2) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
-})();
+}

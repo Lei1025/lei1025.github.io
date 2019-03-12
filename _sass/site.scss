@@ -221,7 +221,11 @@ header .entry-meta {
         background-position: center center;
     }
 }
-.circle {
+.tag-circle-num {
+	display: none;	
+}
+
+.tagname:hover > .tag-circle-num{
 	display: inline-block;
 	height: 18px;
 	width: 18px;
@@ -234,6 +238,7 @@ header .entry-meta {
 	vertical-align: middle;
 	font-weight: bold;
 }
+
 .tagname{
     text-transform: uppercase;
 }

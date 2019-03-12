@@ -118,9 +118,10 @@
         <li>
             <a href="#">Tags</a>
             <ul class="dl-submenu">
+                <li><a href="/tags"><span class="fa fa-bookmark-o"></span>  ALL TAGs</a></li>
                 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
                 {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-                <li><a href="/tags/#{{ this_word }}" class="tagname">{{ this_word }}    <span class="circle">{{ site.tags[this_word].size }}</span></a></li>
+                <li><a href="/tags/#{{ this_word }}" class="tagname">{{ this_word }}    <span class="tag-circle-num">{{ site.tags[this_word].size }}</span></a></li>
                 {% endunless %}{% endfor %}
             </ul>
         </li>
