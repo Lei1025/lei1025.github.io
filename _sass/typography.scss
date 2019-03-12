@@ -10,6 +10,9 @@
 	@media #{$small} {
 		padding: 0 .5em;
 	}
+    > p{
+        @include font-rem(18);
+    }
 }
 
 // titles
@@ -148,3 +151,5 @@ table {
 dt {
     font-weight: bolder;
 }
+
+
