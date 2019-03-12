@@ -7,7 +7,7 @@
 	-moz-font-smoothing: antialiased !important;
 	text-rendering: optimizelegibility !important;
 	//text-align: justify;
-	@media #{$small} {
+	//@media #{$small} {
 		padding: 0 .5em;
 	}
     > p{
