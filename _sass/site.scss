@@ -7,6 +7,10 @@
 	font-size: 100%;
 }
 
+::selection {
+  color: $red;
+  background: $white;
+}
 
 html {
 	@extend %extend1;
