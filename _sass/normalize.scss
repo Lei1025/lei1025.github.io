@@ -34,6 +34,11 @@ video {
   display: inline-block;
 }
 
+canvas{
+  position: absolute;
+  z-index: 0;
+}
+
 audio:not([controls]) {
   display: none;
   height: 0;
