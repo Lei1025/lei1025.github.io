@@ -84,9 +84,10 @@ h3.title a {
 
 // quotes
 blockquote {
-	font-family:$alt-font;
+	font-family:$font1;
 	font-style:italic;
-	border-left:8px solid $color_tundora ;
+	@include font-rem(15);
+	border-left:8px solid $red;//$color_tundora ;
 	padding-left:20px;
 	margin: 0;
 }

@@ -5,9 +5,9 @@ date: 2019-03-07
 tags: [js, javascript, regex]
 comments: true
 ---
-One method to disable child nodes inherit parent's onclick event in JS alone with one Js regex practice.
+>One method to disable child nodes inherit parent's onclick event in JS alone with one Js regex practice.
 
->I do remember I read an article about how to deal with event inheritance situations including their triggered order and different methods of prevention, but I can't find it any more :( 
+I do remember I read an article about how to deal with event inheritance situations including their triggered order and different methods of prevention, but I can't find it any more :( 
 
 My current solution is `event.cancelBubble=true`
 
