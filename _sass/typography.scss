@@ -11,7 +11,7 @@
 		padding: 0 .5em;
 	}
     > p{
-        @include font-rem(18);
+        @include font-size(18);
     }
 }
 
