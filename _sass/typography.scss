@@ -10,9 +10,6 @@
 	@media #{$small} {
 		padding: 0 .5em;
 	}
-    > p{
-        font-rem(18);
-    }
 }
 
 // titles
@@ -41,6 +38,9 @@
 	blockquote{
 		border-color: $blue;
 	}
+    p{
+        @include font-rem(18);
+    }
 }
 
 // headings
