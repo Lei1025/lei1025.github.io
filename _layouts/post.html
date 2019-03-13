@@ -32,17 +32,19 @@ layout: compress
                         <i class="fa fa-chevron-left"></i>
                     </a>
                 </div>
-                {{ content }}
+                <div class="post-content">
+                  {{ content }}
+                </div>                
                 <div class="entry-meta">
                 {% include meta.html %}
                 </div>         
             </div>
             <div class="PageNavigation">
                 {% if page.previous.url %}
-                  <a class="next" href="{{page.previous.url}}"><i>{{page.previous.title}}</i> &raquo;</a>
+                  <a class="next drop-down-underline" href="{{page.previous.url}}">{{page.previous.title}} &raquo;</a>
                 {% endif %}
                 {% if page.next.url %}
-                  <a class="prev" href="{{page.next.url}}">&laquo; <i>{{page.next.title}}</i></a>
+                  <a class="prev drop-down-underline" href="{{page.next.url}}">&laquo; {{page.next.title}}</a>
                 {% endif %}
               </div>
         </div>

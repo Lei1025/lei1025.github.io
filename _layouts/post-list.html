@@ -22,14 +22,16 @@ title: ALL POSTS
                         <i class="fa fa-home fa-2x"></i>
                     </a>
                 </div>
-                <div class="post-list">
+                <div class="post-list ">
                     {% for post in site.posts %} 
                         {% if post.project == null %}
-                    <ul>
-                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                    <ul class="wow fadeInUp">
+                        <li>
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+                            <span><i class="fa fa-calendar"></i><i>  {{ post.date | date: '%B %d, %Y' }}</i></span>
+                       
+                            <!--a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a-->
                         </li>
                     </ul>
                     <hr>
