@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent triggering parent's onclick event in JS
+title: Prevent Triggering Parent's onClick Event in JS
 date: 2019-03-07
 tags: [js, javascript, regex]
 comments: true

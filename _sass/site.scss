@@ -229,7 +229,7 @@ header .entry-meta {
 	display: none;	
 }
 
-.tagname:hover > .tag-circle-num{
+.tag-name:hover > .tag-circle-num{
 	display: inline-block;
 	height: 18px;
 	width: 18px;
@@ -243,6 +243,6 @@ header .entry-meta {
 	font-weight: bold;
 }
 
-.tagname{
+.tag-name{
     text-transform: capitalize;
 }
