@@ -54,4 +54,46 @@ $(document).ready(function() {
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
+
+  //material button 
+  $('.ripple-btn').rkmd_rippleEffect();
 });
+
+
+(function($) {
+  $.fn.rkmd_rippleEffect = function() {
+    var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
+
+    btn = $(this).not('[disabled], .disabled');
+
+    btn.on('mousedown', function(e) {
+      self = $(this);
+
+      // Disable right click
+      if(e.button === 2) {
+        return false;
+      }
+
+      if(self.find('.ripple').length === 0) {
+        self.prepend('<span class="ripple"></span>');
+      }
+      ripple = self.find('.ripple');
+      ripple.removeClass('animated');
+
+      eWidth = self.outerWidth();
+      eHeight = self.outerHeight();
+      size = Math.max(eWidth, eHeight);
+      ripple.css({'width': size, 'height': size});
+
+      rippleX = parseInt(e.pageX - self.offset().left) - (size / 2);
+      rippleY = parseInt(e.pageY - self.offset().top) - (size / 2);
+
+      ripple.css({ 'top': rippleY +'px', 'left': rippleX +'px' }).addClass('animated');
+
+      setTimeout(function() {
+        ripple.remove();
+      }, 800);
+
+    });
+  };
+}(jQuery));

@@ -25,9 +25,9 @@ layout: compress
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
                     {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
+                    <a class="btn ripple-btn zoombtn" href="{{site.url}}/projects/">
                     {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/posts/">
+                    <a class="btn ripple-btn zoombtn" href="{{site.url}}/posts/">
                     {% endif %}
                         <i class="fa fa-chevron-left"></i>
                     </a>
@@ -43,13 +43,13 @@ layout: compress
                   {% if page.previous.url %}
                   <div class="next">
                     <span>NEXT: &#8811;</span>
-                    <a class="drop-down-underline" href="{{page.previous.url}}">{{page.previous.title}}</a>
+                    <a class="drop-down-underline ripple-btn" href="{{page.previous.url}}">{{page.previous.title}}</a>
                   </div>
                   {% endif %}
                   {% if page.next.url %}
                   <div class="prev">
                     <span>&#8810; PREV:</span>
-                    <a class="drop-down-underline" href="{{page.next.url}}">{{page.next.title}}</a>
+                    <a class="drop-down-underline ripple-btn" href="{{page.next.url}}">{{page.next.title}}</a>
                   </div>
                   {% endif %}
               </div>
