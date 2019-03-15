@@ -38,7 +38,9 @@
 <script src="{{ site.url }}/assets/js/bg-star-animation/TweenLite.min.js"></script>
 <script src="{{ site.url }}/assets/js/bg-star-animation/bg-star-animation.js"></script>
 <script>
+    $('.wrapper').children().hide();
     $(window).load(function(){
-    $('#preloader').hide();
-});
-</script>
+        $('#preloader').hide();
+        $('.wrapper').children().show();
+    });
+/script>
