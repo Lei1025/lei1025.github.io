@@ -26,7 +26,7 @@
 - [ ] find a new template with time line to overwrite "Projects" page
 - [ ] Resume page
 - [ ] Google analysis
-- [ ] New Comment System - https://valine.js.org/ ★
-- [ ] 过渡动画 https://codepen.io/joshuaward/pen/XejbZv
+- [ ] New Comment System - https://valine.js.org/ ★ 
+- [ ] 过渡动画 https://codepen.io/joshuaward/pen/XejbZv https://codepen.io/Vestride/pen/vHzyk
 - [x] delete RED background color while redirecting to a new page
 - [x] new button style -- Material Butoon finished!
