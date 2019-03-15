@@ -2,14 +2,14 @@
 
 ## Post List Page
 
-- [ ] Remove "Read More" button?
-- [ ] Add date and time with icon
-- [ ] Add tags under abstract
-- [ ] New function that automatically create abstrat for X line if no 'excerpt' value
+- [x] Remove "Read More" button?
+- [x] Add date and time with icon
+- [x] Add tags under abstract
+- [x] New function that automatically create abstrat for X line if no 'excerpt' value
 
 ## Home Page
 
-- [ ] Update description
+- [x] Update description -- I deleted, nothing to say
 - [ ] Update social media info and icons
 - [ ] Update "About Me"
 - [x] Update backgroud wall paper
@@ -27,6 +27,6 @@
 - [ ] Resume page
 - [ ] Google analysis
 - [ ] New Comment System - https://valine.js.org/ ★
-- [ ] 过渡动画
+- [ ] 过渡动画 https://codepen.io/joshuaward/pen/XejbZv
 - [x] delete RED background color while redirecting to a new page
-- [ ] new button style
+- [x] new button style -- Material Butoon finished!
