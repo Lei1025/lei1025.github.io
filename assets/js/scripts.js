@@ -17,7 +17,10 @@ $(function() {
 
 // All others
 $(document).ready(function() {
+    //preloader nanimation
+    preloader();
     // zoom in/zoom out animations
+    /*
     if ($(".container").hasClass('fadeOut')) {
         $(".container").removeClass("fadeOut").addClass("fadeIn");
     }
@@ -25,9 +28,10 @@ $(document).ready(function() {
         $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
     }
     $(".zoombtn").click(function() {
-        $(".container").removeClass("fadeIn").addClass("fadeOut");
+       $(".container").removeClass("fadeIn").addClass("fadeOut");
         $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
     });
+    */
     // go up button
     $.goup({
         trigger: 500,
@@ -98,9 +102,9 @@ $(document).ready(function() {
 }(jQuery));
 
 //loader
-$(document).ready(function(){
+function preloader(){
   $('#preloader').hide();
-  $('.content').css('visibility','');
+  $('.loading').css('visibility','visible');
   $('.post-title').addClass('animated fadeIn');
   $('.post-content').addClass('animated fadeInUp');
-});
+};
