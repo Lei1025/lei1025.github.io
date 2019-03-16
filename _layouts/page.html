@@ -10,12 +10,12 @@ layout: compress
     {% include head.html %}
 </head>
 <body>
+    {% include preload.html %}
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">
         <div class="wrapper animated fadeIn">
             <div class="content">
-                {% include preload.html %}
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
                     <a class="btn ripple-btn ripple-btn ripple-btn ripple-btn ripple-btn ripple-btn ripple-btn zoombtn" href="{{site.url}}">
