@@ -9,7 +9,7 @@ background:         'assets/img/background.jpg'
 tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://lei1025.github.io 
-url:                http://127.0.0.1:4000 
+#url:                http://127.0.0.1:4000 
 
 
 # Jekyll
