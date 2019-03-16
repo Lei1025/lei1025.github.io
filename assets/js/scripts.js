@@ -98,7 +98,7 @@ $(document).ready(function() {
 }(jQuery));
 
 //loader
-$(window).load(function(){
+$(document).ready(function(){
   $('#preloader').hide();
   $('.content').css('visibility','');
   $('.post-title').addClass('animated fadeIn');
