@@ -55,10 +55,9 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 
-  //material button 
+//material button 
   $('.ripple-btn').rkmd_rippleEffect();
 });
-
 
 (function($) {
   $.fn.rkmd_rippleEffect = function() {
@@ -97,3 +96,11 @@ $(document).ready(function() {
     });
   };
 }(jQuery));
+
+//loader
+$(window).load(function(){
+  $('#preloader').hide();
+  $('.content').css('visibility','');
+  $('.post-title').addClass('animated fadeIn');
+  $('.post-content').addClass('animated fadeInUp');
+});
