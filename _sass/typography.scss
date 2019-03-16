@@ -115,6 +115,10 @@ li .highlight pre {
     border: 0;
 }
 
+.highlighter-rouge .highlight {
+	overflow-x: auto;
+}
+
 // table
 table {
 	width: 100%;
