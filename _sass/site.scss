@@ -139,7 +139,7 @@ body {
 }
 // entry meta
 .entry-meta {
-	@include font-rem(12);
+	@include font-rem(14);
 	text-transform: uppercase;
 	color: lighten($color_tuatara,60);
 	padding-left: 0;
@@ -168,7 +168,7 @@ body {
 			background-color: darken($white,15);
 			@include border-radius(3px,3px,0,0);
 		}
-		&:hover {
+		&:hover, &.hovered{
 			background-color: darken($white,15);
 			box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
 		}
