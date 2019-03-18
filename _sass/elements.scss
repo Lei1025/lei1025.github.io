@@ -325,13 +325,19 @@ kbd {
         font-size: large;
         margin-bottom: 0;
     }
-    .prev {
-        float: left;
+    div.prev {
+        display:inline-block;
+        //float: left;
         text-align: left;
+        max-width: 50%;
     }
-    .next {
+    div.next {
+        display:inline-block;
         text-align: right;
-        float: right;
+        position: absolute;
+        right:0;
+        max-width: 50%;
+        //float: right;
     }
 }
 

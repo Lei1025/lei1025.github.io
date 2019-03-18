@@ -174,12 +174,15 @@ body {
 		}
 	}
 }
-header .entry-meta {
+
+
+.invisible-sm {
 	display: none; // hide header meta on small screens
 	@media #{$notsmall} {
 		display: block;
 	}
 }
+
 .entry-title a {
     text-decoration: none;
 }

@@ -19,7 +19,7 @@ layout: compress
     <!-- Header -->
     <header class="header" role="banner">
         <div class="wrapper">
-         <div class="content loading">
+            <div class="content loading">
                 <div class='post-title {% if page.feature %} feature {% endif %}'>
                     <h1>{{ page.title }}</h1>
                     <h4>{{ page.date | date: '%B %d, %Y' }}</h4>
@@ -41,20 +41,20 @@ layout: compress
                 <div class='post-content'>
                     {{ content }}
                 </div>
-                <div class="entry-meta">
+                <div class="entry-meta invisible-sm">
                     {% include meta.html %}
                 </div>
                 <div class="PageNavigation">
-                    {% if page.previous.url %}
-                    <div class="next">
-                        <span>NEXT: &#8811;</span>
-                        <a class="drop-down-underline ripple-btn" href="{{page.previous.url}}">{{page.previous.title}}</a>
-                    </div>
-                    {% endif %}
                     {% if page.next.url %}
                     <div class="prev">
                         <span>&#8810; PREV:</span>
                         <a class="drop-down-underline ripple-btn" href="{{page.next.url}}">{{page.next.title}}</a>
+                    </div>
+                    {% endif %}
+                    {% if page.previous.url %}
+                    <div class="next">
+                        <span>NEXT: &#8811;</span>
+                        <a class="drop-down-underline ripple-btn" href="{{page.previous.url}}">{{page.previous.title}}</a>
                     </div>
                     {% endif %}
                 </div>
