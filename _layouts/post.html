@@ -45,18 +45,19 @@ layout: compress
                     {% include meta.html %}
                 </div>
                 <div class="PageNavigation">
+                        {% if page.previous.url %}
+                        <div class="next">
+                            <span>NEXT: &#8811;</span>
+                            <a class="drop-down-underline ripple-btn" href="{{page.previous.url}}">{{page.previous.title}}</a>
+                        </div>
+                        {% endif %}
                     {% if page.next.url %}
                     <div class="prev">
                         <span>&#8810; PREV:</span>
                         <a class="drop-down-underline ripple-btn" href="{{page.next.url}}">{{page.next.title}}</a>
                     </div>
                     {% endif %}
-                    {% if page.previous.url %}
-                    <div class="next">
-                        <span>NEXT: &#8811;</span>
-                        <a class="drop-down-underline ripple-btn" href="{{page.previous.url}}">{{page.previous.title}}</a>
-                    </div>
-                    {% endif %}
+
                 </div>
             </div>
         </div>
