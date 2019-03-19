@@ -94,7 +94,6 @@ DEPENDENCIES
   jekyll-gist
   jekyll-mentions
   jekyll-sitemap
-  kramdown
 
 BUNDLED WITH
    2.0.1
