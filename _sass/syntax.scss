@@ -14,7 +14,7 @@ pre.highlight {
 		margin: 0;
 		padding: 1em;
 	}
-    pre::selection, code::selection{
+    pre:selection, code:selection{
        color: $blue;
        background: #fff;
     }
