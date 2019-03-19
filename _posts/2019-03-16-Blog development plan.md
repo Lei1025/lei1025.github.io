@@ -6,7 +6,7 @@ tags: [githubpage, jekyll]
 comments: true
 ---
 
->Current blog's derives from [Moon Jekyll Theme](https://github.com/TaylanTatli/Moon), and I am keeping adding new features and making improvemnt. This post is a record of what I did and I am planning to do.
+>Current blog derives from [Moon Jekyll Theme](https://github.com/TaylanTatli/Moon), and I am keeping adding new features and making improvemnt. This post is a record of what I did and I am planning to do.
 
 # To do list
 
