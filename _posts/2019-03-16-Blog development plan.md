@@ -32,6 +32,7 @@ comments: true
 - [x] New header color
 - [x] New code block style
 - [x] page tile and page content show up animation
+- [ ] Create an edit button or link
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
