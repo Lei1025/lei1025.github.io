@@ -48,6 +48,7 @@ comments: true
 - [x] new button style -- Material Butoon finished! ★ 
 - [x] Links and buttons add on click animation
 - [ ] Preloader animation ★ 
+- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)
 
 ## What's New
 ate with time line to overwrite "Projects" page
