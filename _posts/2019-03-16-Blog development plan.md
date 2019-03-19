@@ -24,7 +24,7 @@ comments: true
 - [ ] Update social media info and icons
 - [ ] Update "About Me"
 - [x] Update backgroud wall paper ★
-- [x] Add mouse tracking animation -- Inspried by https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html
+- [x] Add mouse tracking animation -- Inspried by [https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html]
 
 ## Post Page
 - [x] add page navigation -- prev and next
@@ -51,4 +51,4 @@ comments: true
 #What's New
 ate with time line to overwrite "Projects" page
 - [ ] Resume page
-- [ ] New Comment System - https://valine.js.org/ 
+- [ ] New Comment System - [https://valine.js.org/] 
