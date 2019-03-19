@@ -5,28 +5,40 @@
 - [x] Remove "Read More" button?
 - [x] Add date and time with icon
 - [x] Add tags under abstract
-- [x] New function that automatically create abstrat for X line if no 'excerpt' value
+- [x] New abstract styling
+- [x] Change show up animations
 
 ## Home Page
 
 - [x] Update description -- I deleted, nothing to say
 - [ ] Update social media info and icons
 - [ ] Update "About Me"
-- [x] Update backgroud wall paper
-- [x] Add mouse tracking animation
+- [x] Update backgroud wall paper ★
+- [x] Add mouse tracking animation -- Inspried by https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html
 
 ## Post Page
 - [x] add page navigation -- prev and next
 - [ ] update social media share function -- add wechat, weibo and 二维码 sharing
+- [x] New header color
+- [x] New code block style
+- [x] page tile and page content show up animation
 
 ## Tags Page
-- [ ] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
+- [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
+- Finished with new button on click style and animations ★ 
 
-## What's new 
-- [ ] find a new template with time line to overwrite "Projects" page
-- [ ] Resume page
+## Navigation Bar
+- [x] Re-design "Tags" Menu
+- [ ] Hover Events
+
+## Global Elements
 - [ ] Google analysis
-- [ ] New Comment System - https://valine.js.org/ ★ 
-- [ ] 过渡动画 https://codepen.io/joshuaward/pen/XejbZv https://codepen.io/Vestride/pen/vHzyk
 - [x] delete RED background color while redirecting to a new page
-- [x] new button style -- Material Butoon finished!
+- [x] new button style -- Material Butoon finished! ★ 
+- [x] Links and buttons add on click animation
+- [ ] Preloader animation ★ 
+
+#What's New
+ate with time line to overwrite "Projects" page
+- [ ] Resume page
+- [ ] New Comment System - https://valine.js.org/ 

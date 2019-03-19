@@ -266,7 +266,7 @@ kbd {
         text-decoration: none;
         //background: $white;
         color: $color_shark;
-        a {
+        > a {
             @include font-rem(20);
             text-decoration: none;
             color: $color_shark;
