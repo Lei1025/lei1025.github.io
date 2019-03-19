@@ -108,6 +108,10 @@ li pre {
     @include rounded(4px);
     margin: 0 2px;
     padding: 0 5px;
+    ::selection{
+        color: #333;
+        background: #fff;
+    }
 }
 li .highlight code,
 li .highlight pre {
