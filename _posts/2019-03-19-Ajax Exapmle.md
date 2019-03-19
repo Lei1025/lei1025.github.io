@@ -10,7 +10,7 @@ comments: true
 
 ## Submit a form
 
-```jquery
+```js
 // this is the id of the form
 $("#idForm").submit(function(e) {
 
