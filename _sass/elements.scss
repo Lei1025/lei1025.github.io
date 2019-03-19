@@ -422,3 +422,11 @@ kbd {
   .loading{
       visibility: hidden;
   }
+
+  //fix kramdown checkbox error
+  .post-content ul.task-list {
+      list-style-type: none;
+      [type="checkbox"], [type="radio"]{
+            margin-right: 5px;
+      }
+  }
