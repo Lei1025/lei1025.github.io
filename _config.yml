@@ -8,8 +8,8 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/background.jpg'
 tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://lei1025.github.io 
-#url:                http://127.0.0.1:4000 
+#url:                https://lei1025.github.io 
+url:                http://127.0.0.1:4000 
 
 
 # Jekyll
@@ -17,13 +17,12 @@ permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
+  input:            GFM
   auto_ids:         true
   footnote_nr:      1
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-  input:            GFM
-  hard_wrap:        false
 mathjax:            true
 sass:
   sass_dir:         _sass
@@ -67,7 +66,7 @@ steam:              username
 #hackernews:        username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap

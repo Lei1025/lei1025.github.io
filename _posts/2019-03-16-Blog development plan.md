@@ -12,7 +12,7 @@ comments: true
 
 ## Post List Page
 
-[x] Remove "Read More" button?
+- [x] Remove "Read More" button?
 - [x] Add date and time with icon
 - [x] Add tags under abstract
 - [x] New abstract styling
