@@ -9,6 +9,8 @@ comments: true
 > It always takes me a long time to find an exactly example what I wannt for Jquery AJAX.  Here I will collect some example I used frequently.
 
 ## Submit a form
+
+```jquery
 // this is the id of the form
 $("#idForm").submit(function(e) {
 
@@ -29,8 +31,9 @@ $("#idForm").submit(function(e) {
 
 
 });
+```
 
-Reference: [https://stackoverflow.com/questions/1960240/jquery-ajax-submit-form]
+[Reference](https://stackoverflow.com/questions/1960240/jquery-ajax-submit-form)
 
 ## Post (with data)
 
