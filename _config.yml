@@ -23,6 +23,7 @@ kramdown:
   toc_levels:       1..6
   enable_coderay:   false
   input:            GFM
+  hard_wrap:        false
 mathjax:            true
 sass:
   sass_dir:         _sass
