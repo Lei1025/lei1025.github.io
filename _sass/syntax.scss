@@ -14,6 +14,10 @@ pre.highlight {
 		margin: 0;
 		padding: 1em;
 	}
+    &:selection{
+       color: #333;
+       background: #fff;
+    }
 }
 
 .highlight pre { background-color: #272822; }
