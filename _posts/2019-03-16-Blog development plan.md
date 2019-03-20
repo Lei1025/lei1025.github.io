@@ -51,7 +51,7 @@ comments: true
 
 ~~- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)~~
 
-- [x] New theme color - blue https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/
+- [x] New theme color - blue [https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/]
 
 ## What's New
 - [x] Re-design project page with images
