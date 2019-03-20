@@ -52,8 +52,6 @@ function main() {
         xNbr = Math.round(width / 50);
         yNbr = Math.round(height / 50);
 
-        console.log("x:" + xNbr + ";y:" + yNbr);
-
         points = [];
         for (var x = 0; x < width; x = x + width / xNbr) {
             for (var y = 0; y < height; y = y + height / yNbr) {

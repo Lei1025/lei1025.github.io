@@ -37,19 +37,9 @@ $(document).ready(function () {
         $("article[id=\'"+tagName+"\']").show().addClass('animated fadeIn').siblings('article').hide();
     });
 
-    // zoom in/zoom out animations
-    /*
-    if ($(".container").hasClass('fadeOut')) {
-        $(".container").removeClass("fadeOut").addClass("fadeIn");
-    }
-    if ($(".wrapper").hasClass('fadeOut')) {
-        $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
-    }
-    $(".zoombtn").click(function() {
-       $(".container").removeClass("fadeIn").addClass("fadeOut");
-        $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
-    });
-    */
+    //do not show javascript tag if js exists due to limitaion of space
+    hideJavascriptTag();
+
     // go up button
     $.goup({
         trigger: 500,
@@ -132,3 +122,14 @@ function preloader() {
     $('.post-title').addClass('animated fadeIn');
     $('.post-content').addClass('animated fadeInUp');
 };
+
+function hideJavascriptTag(){
+    var links = $('.post-list-tags a');
+    for (let i = 0; i < links.length; i++) {
+        const element = links[i];
+        var isSpanHasJs = element.firstElementChild.textContent.toLowerCase().includes('javascript')
+        if(isSpanHasJs){
+            $(element).hide();
+        } 
+    }
+}
