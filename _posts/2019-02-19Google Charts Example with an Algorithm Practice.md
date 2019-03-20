@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Chart Example with an Algorithm Practice
+title: Google Charts Example with an Algorithm Practice
 date: 2019-02-19
 tags: [js, javascript, jquery, ajax, html, css, GoogleCharts, example]
 comments: true
