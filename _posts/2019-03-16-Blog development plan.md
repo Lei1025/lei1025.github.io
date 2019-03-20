@@ -48,7 +48,8 @@ comments: true
 - [x] new button style -- Material Butoon finished! ★ 
 - [x] Links and buttons add on click animation
 - [ ] Preloader animation ★ 
-- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)
+~~- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)~~
+- [x] New theme color - blue https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/
 
 ## What's New
 ate with time line to overwrite "Projects" page
