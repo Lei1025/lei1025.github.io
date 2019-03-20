@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ajax Exapmle
-date: 2019-03-19
+date: 2019-02-28
 tags: [js, javascript, jquery, ajax, post, get, form, submit,example]
 comments: true
 ---
