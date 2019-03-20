@@ -6,7 +6,7 @@ tags: [js, javascript, jquery, ajax, html, css, GoogleCharts, example]
 comments: true
 ---
 
->The reason why I choose `Google Charts` as my line chart solution is that I love it's data format and a variety of options.
+>The reason why I choose `Google Charts` as my line chart solution is because of its clean data format and a variety of options.
 
 I have to admit that Google Charts is not the best looking one, but it is very friendly for developers. First, the data set format always looks like a table, actually arrays in an array. Having compared with other libraries, this format is the clearest one for me.
 
