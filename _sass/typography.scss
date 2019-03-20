@@ -27,19 +27,17 @@
 }
 .post-title {
 	text-align: center;
-	font-weight: bold;
+	font-weight: bolder;
 	margin-bottom: 1rem;
 	h1{
 		font-family: $font3;
+		color: $blue;
 	}
 }
 
 .post-content {
-	h1, h2{
-		color: $blue;
-	}
-	blockquote{
-		border-color: $blue;
+	h1, h2, h3{
+		color: $font_black;
 	}
     p{
         @include font-rem(18);
@@ -48,7 +46,7 @@
 
 // headings
 h3.title a {
-	color: $color_shark;
+	color: $font_gray;
 	text-decoration: none;
 }
 
@@ -57,7 +55,7 @@ blockquote {
 	font-family:$font1;
 	font-style:italic;
 	@include font-rem(15);
-	border-left:8px solid $red;//$color_tundora ;
+	border-left:8px solid $blue;//$color_tundora ;
 	padding-left:20px;
 	margin: 0;
 }
@@ -77,15 +75,15 @@ figcaption {
 // links
 a {
   transition: color .4s;
-  color: $color_shark;
+  color: $font_gray;
   &:link {
-  	color: $color_shark;
+  	color: $font_gray;
   }
   &:visited {
-  	color: $color_tuatara;
+  	color: $font_gray;
   }
   &:hover {
-  	color: $red;
+  	color: $blue;
   }
   &:active {
   	transition: color .3s;
@@ -103,8 +101,9 @@ li code,
 p pre,
 li pre {
     @include font(16);
-    background-color: $color_gray;
-    border: 1px solid $color_mischka;
+	background-color: $light_gray;
+	color: $white;
+    //border: 1px solid $color_mischka;
     @include rounded(4px);
     margin: 0 2px;
     padding: 0 5px;
@@ -127,7 +126,7 @@ table {
     padding: .5em 1em;
     text-indent: 0;
     @include font-rem(14);
-    background-color: $color_gray;
+    background-color: $light_gray;
     border: 1px solid $color_pink_swan;
     @include rounded(3px);
 }

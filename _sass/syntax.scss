@@ -5,15 +5,15 @@ pre.highlight {
 .highlight {
 	background-color: #49483e;
 	font-family: $font2;
-	@include font-size(16);
+	@include font-size(15);
 	color: #f8f8f2;
 	border-radius: 4px;
-    line-height: 1.2;
+    line-height: 1.3;
 	pre {
 		position: relative;
 		margin: 0;
 		padding: 1em;
-	}
+	}	
 }
 
 .highlight pre { background-color: #272822; }

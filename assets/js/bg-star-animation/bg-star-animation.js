@@ -201,7 +201,8 @@ function main() {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = "rgba(156,217,249," + p.active + ")";
+            //ctx.strokeStyle = "rgba(156,217,249," + p.active + ")";
+            ctx.strokeStyle = "rgba(252,252,252," + p.active + ")";
             ctx.stroke();
         }
     }

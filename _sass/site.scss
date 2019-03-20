@@ -9,7 +9,7 @@
 
 ::selection {
   color: $white;
-  background: $bodycolor;
+  background: $blue;
 }
 
 html {
@@ -20,8 +20,8 @@ body {
 	@extend %extend1;
 	font-family: $font1;
 	@include font-rem($doc-font-size);
-	color: $color_tuatara;
-	background-color: $bodycolor;
+	color: $font_black;
+	background-color: $blue;
 	background-position: center center;
 	background-attachment: fixed;
 	@media #{$small} {
@@ -80,7 +80,7 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 	@include center-block();
-	background-color: rgba(250, 250, 250, 0.9);
+	background-color: $white;
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;
@@ -109,8 +109,8 @@ body {
 	width: 75%;
 	max-width: 950px;
 	margin: 4rem auto;
-	background: rgba(250, 250, 250, 0.95);
-	color: $color_tuatara;
+	background: $white;
+	color: $font_gray;
 	padding: 2em;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
@@ -126,7 +126,7 @@ body {
 	max-width: 850px;
 	margin: -3rem auto 4rem;
 	background: $white;
-	color: $color_tuatara;
+	color: $font_black;
 	padding: 2em;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
@@ -141,10 +141,10 @@ body {
 .entry-meta {
 	@include font-rem(14);
 	text-transform: uppercase;
-	color: lighten($color_tuatara,60);
+	color: lighten($font_black,60);
 	padding-left: 0;
 	a {
-		color: lighten($color_tuatara,60);
+		color: lighten($font_black,60);
 	}
 	li {
 	    list-style-type: none;
@@ -157,7 +157,7 @@ body {
         @include rounded(3px);
         text-decoration: none;
         background-color: $white;
-        color: $color_tuatara;
+        color: $font_black;
         @include transition(.75s);
         margin: 2px 5px;
 		span {
@@ -170,7 +170,7 @@ body {
 		}
 		&:hover, &.hovered{
 			background-color: darken($white,15);
-			box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
+			box-shadow: 0 0 1px 0 rgba($font_gray,0.5);
 		}
 	}
 }

@@ -10,7 +10,7 @@
     color: $color_shark;
     &:hover {
         box-shadow: 0 0 1px 0 rgba($color_shark, 0.5);
-        color: $red;
+        color: $blue;
     }
 }
 .social-btn {
@@ -239,7 +239,7 @@ kbd {
     }
 }
 .goup-arrow {
-    border-color: transparent transparent $color_tuatara !important;
+    border-color: transparent transparent $font_black !important;
 }
 
 // reading time
@@ -265,14 +265,14 @@ kbd {
         margin: 0 10px;
         text-decoration: none;
         //background: $white;
-        color: $color_shark;
+        color: $font_gray;
         > a {
             @include font-rem(20);
             text-decoration: none;
-            color: $color_shark;
+            color: $font_gray;
             font-weight: bolder;
             &:hover {
-                color: $red;
+                color: $font_gray;
             }
         }
         p {
@@ -283,6 +283,9 @@ kbd {
             @include font-rem(14);
             color: $color_stack;
         }
+        .fa{
+            color:$blue;
+        }
 
         .post-list-tags {
             float: right;
@@ -291,6 +294,7 @@ kbd {
                 font-weight: initial;
                 &:before {
                     content: "#";
+                    color: $blue;
                 }
                 @media #{$small} {
                     display: none;
@@ -318,12 +322,13 @@ kbd {
     }
     a {
         margin: 0 auto;
-        color: $color_stack;
+        color: $light_gray;
     }
     span {
         font-weight: bold;
         font-size: large;
         margin-bottom: 0;
+        color: $font_gray;
     }
     div.prev {
         display:inline-block;
@@ -360,7 +365,7 @@ kbd {
         left: 0;
         right: 0;
         height: 2px;
-        background-color: $red;
+        background-color: $blue;
     }
     &:before {
         opacity: 0;
