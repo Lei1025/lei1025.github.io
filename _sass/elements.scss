@@ -2,81 +2,97 @@
 %btnextend {
     display: inline-block;
     border: 1px solid;
-    border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5)
-        $color_mischka;
+    border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5) $color_mischka;
     border-radius: 3px;
     text-decoration: none;
     background: $white;
     color: $color_shark;
+
     &:hover {
         box-shadow: 0 0 1px 0 rgba($color_shark, 0.5);
         color: $blue;
     }
 }
+
 .social-btn {
     padding: 10px;
     margin: 10px;
     @extend %btnextend;
 }
+
 .btn {
     padding: 10px 18px;
     @include font-rem(14);
     margin: 4px auto;
     @extend %btnextend;
+
     &.btn-success {
         background-color: $success;
         color: $white;
         border-color: $success;
+
         &:visited {
             color: $white;
         }
+
         &:hover {
             background-color: $white;
             color: $success;
         }
     }
+
     &.btn-warning {
         background-color: $warning;
         color: $white;
         border-color: $warning;
+
         &:visited {
             color: $white;
         }
+
         &:hover {
             background-color: $white;
             color: $warning;
         }
     }
+
     &.btn-danger {
         background-color: $danger;
         color: $white;
         border-color: $danger;
+
         &:visited {
             color: $white;
         }
+
         &:hover {
             background-color: $white;
             color: $danger;
         }
     }
+
     &.btn-info {
         background-color: $info;
         color: $white;
         border-color: $info;
+
         &:visited {
             color: $white;
         }
+
         &:hover {
             background-color: $white;
             color: $info;
         }
     }
 }
+
 .title .btn {
     margin: 10px;
     @include font-rem(16);
     font-weight: 300;
 }
+
 .post-list {
     .btn {
         @include font-rem(14);
@@ -89,59 +105,44 @@ hr {
     height: 1px;
     opacity: 0.8;
     margin: 1em 0;
-    background-image: -webkit-linear-gradient(
-        left,
+    background-image: -webkit-linear-gradient(left,
         $color_gallery,
         $color_stack,
-        $color_gallery
-    );
-    background-image: -moz-linear-gradient(
-        left,
+        $color_gallery);
+    background-image: -moz-linear-gradient(left,
         $color_gallery,
         $color_stack,
-        $color_gallery
-    );
-    background-image: -ms-linear-gradient(
-        left,
+        $color_gallery);
+    background-image: -ms-linear-gradient(left,
         $color_gallery,
         $color_stack,
-        $color_gallery
-    );
-    background-image: -o-linear-gradient(
-        left,
+        $color_gallery);
+    background-image: -o-linear-gradient(left,
         $color_gallery,
         $color_stack,
-        $color_gallery
-    );
+        $color_gallery);
+
     &.hr-line {
         border: 0;
         height: 1px;
         opacity: 0.15;
         margin: 1em 0;
-        background-image: -webkit-linear-gradient(
-            left,
+        background-image: -webkit-linear-gradient(left,
             $color_gallery,
             $color_stack,
-            $color_gallery
-        );
-        background-image: -moz-linear-gradient(
-            left,
+            $color_gallery);
+        background-image: -moz-linear-gradient(left,
             $color_gallery,
             $color_stack,
-            $color_gallery
-        );
-        background-image: -ms-linear-gradient(
-            left,
+            $color_gallery);
+        background-image: -ms-linear-gradient(left,
             $color_gallery,
             $color_stack,
-            $color_gallery
-        );
-        background-image: -o-linear-gradient(
-            left,
+            $color_gallery);
+        background-image: -o-linear-gradient(left,
             $color_gallery,
             $color_stack,
-            $color_gallery
-        );
+            $color_gallery);
     }
 }
 
@@ -158,29 +159,35 @@ img {
     -ms-interpolation-mode: bicubic;
     image-rendering: optimizeQuality;
 }
+
 .img-circle {
     border-radius: 50%;
     //border: 3px solid $white;
     height: 150px;
     width: 150px;
 }
+
 .author-photo {
     background-color: $white;
 }
+
 .image-right {
     float: right;
     margin-left: 1em;
     margin-top: 0;
 }
+
 figure {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     @include clearfix();
+
     img {
         margin-bottom: 10px;
         @include rounded(4px);
     }
+
     &.half {
         @media only screen and (min-width: 62.5em) {
             img {
@@ -189,11 +196,13 @@ figure {
                 margin-left: 1px;
                 margin-right: 1px;
             }
+
             figcaption {
                 clear: left;
             }
         }
     }
+
     &.third {
         @media only screen and (min-width: 62.5em) {
             img {
@@ -202,12 +211,14 @@ figure {
                 margin-left: 1px;
                 margin-right: 1px;
             }
+
             figcaption {
                 clear: left;
             }
         }
     }
 }
+
 svg:not(:root) {
     overflow: hidden;
 }
@@ -231,13 +242,14 @@ kbd {
 // go up button
 .goup-container {
     border-radius: 3px !important;
-    border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5)
-        $color_mischka !important;
+    border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5) $color_mischka !important;
     border: 1px solid;
+
     @media #{$small} {
         display: none !important;
     }
 }
+
 .goup-arrow {
     border-color: transparent transparent $font_black !important;
 }
@@ -251,55 +263,83 @@ kbd {
 
 // post list
 .post-list {
-    line-height: 1rem;
+    line-height: 1.2rem;
     text-align: left;
+
     ul {
         list-style: none;
         padding-left: 0;
+        margin: 8px 0px;
     }
+
     hr {
         margin: 0;
     }
+
     li {
         padding: 10px 18px;
         margin: 0 10px;
         text-decoration: none;
         //background: $white;
         color: $font_gray;
-        > a {
+
+        >a {
             @include font-rem(20);
             text-decoration: none;
             color: $font_gray;
             font-weight: bolder;
+
             &:hover {
                 color: $font_gray;
             }
         }
+
         p {
+            line-height: 1rem;
             //font-weight: lighter;
-            @include font-rem(14);
+            @include font-rem(15);
         }
-        span {
-            @include font-rem(14);
-            color: $color_stack;
+    }
+}
+
+.post-list-footer {
+    @include font-rem(14);
+    color: $light_gray;
+
+    .post-datetime,
+    .post-list-tags {
+        display: inline-block;
+
+
+    }
+
+    .post-datetime {
+        .fa {
+            color: $blue;
         }
-        .fa{
-            color:$blue;
+    }
+
+    .post-list-tags {
+        float:right;
+        a {
+            color: $light_gray;
+
+            &:hover {
+                color: $font-gray;
+            }
         }
 
-        .post-list-tags {
-            float: right;
-            span {
-                margin: 0px 5px;
-                font-weight: initial;
-                &:before {
-                    content: "#";
-                    color: $blue;
-                }
-                @media #{$small} {
-                    display: none;
-                }
+        .tag-name {
+            margin: 0 3px;
+
+            &:before {
+                content: "#";
+                color: $blue;
             }
+        }
+        @media #{$small} {
+            float:none;
+            text-align: right;
         }
     }
 }
@@ -314,30 +354,35 @@ kbd {
     font-style: italic;
     position: relative;
     top: 1rem;
+
     a,
     span {
         display: block;
         margin: 1em 0;
         font-size: 15px;
     }
+
     a {
         margin: 0 auto;
         color: $light_gray;
     }
+
     span {
         font-weight: bold;
         font-size: large;
         margin-bottom: 0;
         color: $font_gray;
     }
+
     div.prev {
-        display:inline-block;
+        display: inline-block;
         //float: left;
         text-align: left;
         max-width: 50%;
     }
+
     div.next {
-        display:inline-block;
+        display: inline-block;
         text-align: right;
         max-width: 50%;
         float: right;
@@ -354,9 +399,11 @@ kbd {
     text-decoration: none;
     position: relative;
     padding-bottom: 6px;
+
     &:hover {
-        color: unset;
+        color: $font-gray;
     }
+
     &:before,
     &:after {
         content: "";
@@ -367,26 +414,32 @@ kbd {
         height: 2px;
         background-color: $blue;
     }
+
     &:before {
         opacity: 0;
         transform: translateY(-$distance);
         transition: transform 0s $easeOutBack, opacity 0s;
     }
+
     &:after {
         opacity: 0;
         transform: translateY($distance/2);
         transition: transform $duration $easeOutBack, opacity $duration;
     }
+
     &:hover,
     &:focus {
+
         &:before,
         &:after {
             opacity: 1;
             transform: translateY(0);
         }
+
         &:before {
             transition: transform $duration $easeOutBack, opacity $duration;
         }
+
         &:after {
             transition: transform 0s $duration $easeOutBack,
                 opacity 0s $duration;
@@ -394,7 +447,7 @@ kbd {
     }
 }
 
-.ripple-btn{
+.ripple-btn {
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -402,36 +455,38 @@ kbd {
     vertical-align: middle;
     user-select: none;
     z-index: 1;
-  
+
     .ripple {
-      display: block;
-      position: absolute;
-      border-radius: 100%;
-      background: rgba(0, 0, 0, 0.1);
-      transform: scale(0);
-      pointer-events: none;
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        transform: scale(0);
+        pointer-events: none;
     }
 
     .animated {
-      animation: ripple 0.6s linear;
+        animation: ripple 0.6s linear;
     }
-  
+
     @include keyframes('ripple') {
-      100% {
-        opacity: 0;
-        transform: scale(2.5);
-      }
+        100% {
+            opacity: 0;
+            transform: scale(2.5);
+        }
     }
-  }
+}
 
-  .loading{
-      visibility: hidden;
-  }
+.loading {
+    visibility: hidden;
+}
 
-  //fix kramdown checkbox error
-  .post-content ul.task-list {
-      list-style-type: none;
-      [type="checkbox"], [type="radio"]{
-            margin-right: 5px;
-      }
-  }
+//fix kramdown checkbox error
+.post-content ul.task-list {
+    list-style-type: none;
+
+    [type="checkbox"],
+    [type="radio"] {
+        margin-right: 5px;
+    }
+}

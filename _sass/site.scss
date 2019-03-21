@@ -140,7 +140,7 @@ body {
 // entry meta
 .entry-meta {
 	@include font-rem(14);
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: lighten($font_black,60);
 	padding-left: 0;
 	a {

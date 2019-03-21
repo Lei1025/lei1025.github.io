@@ -54,7 +54,7 @@ h3.title a {
 blockquote {
 	font-family:$font1;
 	font-style:italic;
-	@include font-rem(15);
+	@include font-size(15);
 	border-left:8px solid $blue;//$color_tundora ;
 	padding-left:20px;
 	margin: 0;
@@ -75,7 +75,7 @@ figcaption {
 // links
 a {
   transition: color .4s;
-  color: $font_gray;
+  color: $light_gray;
   &:link {
   	color: $font_gray;
   }
