@@ -36,24 +36,24 @@ disqus_shortname:   Lei
 #google:
   #plus:            #username
   #analytics:
-  #verify:           google-site-verification=UTajH_awdEqDj_ud8Ri4r-cI9kKNrihKICeTtXVntUQ
+  #verify:          
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email:              llei1025@gmail.com
 twitter:            username
 facebook:           username
-github-url:         username
+github-url:         lei1025
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           lei-liu-1025
 #xing:              username
-instagram:          username
+instagram:          lei6745
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel
