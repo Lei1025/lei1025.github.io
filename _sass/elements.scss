@@ -490,3 +490,17 @@ kbd {
         margin-right: 5px;
     }
 }
+
+.speech-bubble {
+	height: 44px;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	background-repeat: no-repeat;
+	color: #4d4d4d;
+	width: 60px;
+	overflow: hidden;
+	display: none;
+	background: url("https://ws.sharethis.com/secure/images/bubble_arrow_below.png") no-repeat 10px 40px;
+	line-height: 16px;
+}
