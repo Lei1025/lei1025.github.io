@@ -37,4 +37,22 @@ $("#idForm").submit(function(e) {
 
 ## Post (with data)
 
+```js
+$.post(
+  "surveypost.aspx",
+  {
+    name: "data",
+    name: "data",
+    name: "data"
+  },
+  //if needed
+  function(callback) {
+      //do something
+  }
+).done(function() {
+    //do something if needed
+});
+
+```
+
 ## Get
