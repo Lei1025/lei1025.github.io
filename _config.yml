@@ -1,6 +1,6 @@
 # Site
 title:              Lei's Blog
-bio:                'Life Eat Inks.'
+#bio:                'Life Eat Inks.'
 description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
 words_per_minute:   150
@@ -64,6 +64,7 @@ instagram:          llei6745
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
+wechat:             'assets/img/logo.png'
 
 # Gems
 plugins:
