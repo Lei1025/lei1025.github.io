@@ -14,7 +14,8 @@ I am feeling sick of embedding `Javascript` code in `xsl`, particularity working
 ### Javascipt `<script>`
 
 1. Js Template
-```xsl
+
+{% highlight html lineno %}
 <xsl:template name="javascript">
 	<xsl:param name="code"/>
 	<xsl:text disable-output-escaping="yes">
@@ -26,7 +27,8 @@ I am feeling sick of embedding `Javascript` code in `xsl`, particularity working
 		&lt;/script&gt;
 	</xsl:text>
 </xsl:template>
-```
+
+{% endhighlight %}
 
 2. Call "JavaScript" Template
 ```xsl
