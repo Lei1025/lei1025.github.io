@@ -53,7 +53,7 @@ Output from brower:
 ### CSS `<style>`
 Thus, we can do the same thing on embedding css code.
 
-```markup
+```html
 <xsl:template name="style">
 		<xsl:text disable-output-escaping="yes">
 		&lt;style&gt;
