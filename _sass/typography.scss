@@ -36,6 +36,9 @@
 }
 
 .post-content {
+    h1 {
+	border-bottom: 2px solid $green;
+}
 	h1, h2, h3{
 		color: $font_black;
 	}
