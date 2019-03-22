@@ -57,4 +57,6 @@ comments: true
 - [x] Re-design project page with images
 - [ ] Resume page
 - [x] New Comment System - [Link:](https://valine.js.org/)
-- [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/)
+- [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
+    - http://scrollnav.com/ 
+    - http://davist11.github.io/jQuery-One-Page-Nav/
