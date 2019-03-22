@@ -28,7 +28,7 @@ comments: true
 
 ## Post Page
 - [x] add page navigation -- prev and next
-- [ ] update social media share function -- add wechat, weibo and 二维码 sharing
+- [x] update social media share function -- add wechat, weibo and QR code sharing
 - [x] New header color
 - [x] New code block style
 - [x] page tile and page content show up animation
@@ -51,9 +51,9 @@ comments: true
 
 ~~- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)~~
 
-- [x] New theme color - blue [https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/]
+- [x] New theme color - blue [Reference:](https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/)
 
 ## What's New
 - [x] Re-design project page with images
 - [ ] Resume page
-- [ ] New Comment System - [link](https://valine.js.org/)
+- [x] New Comment System - [Link:](https://valine.js.org/)
