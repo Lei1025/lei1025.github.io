@@ -71,6 +71,30 @@ $(document).ready(function () {
     $('.ripple-btn').rkmd_rippleEffect();
 });
 
+//loader
+function preloader() {
+    $('#preloader').hide();
+    $('.loading').css('visibility', 'visible');
+    //all pages tile fade in
+    $('.post-title').addClass('animated fadeIn');
+    
+    //post page aniamtions
+    $('#post-content h1').addClass('animated slideInUp');
+    $('#post-content .post-content').addClass('animated fadeIn delay-1s');
+};
+
+function hideJavascriptTag(){
+    var links = $('.post-list-tags a');
+    for (let i = 0; i < links.length; i++) {
+        const element = links[i];
+        var isSpanHasJs = element.firstElementChild.textContent.toLowerCase().includes('javascript')
+        if(isSpanHasJs){
+            $(element).hide();
+        } 
+    }
+}
+
+//material button function
 (function ($) {
     $.fn.rkmd_rippleEffect = function () {
         var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
@@ -114,26 +138,3 @@ $(document).ready(function () {
         });
     };
 }(jQuery));
-
-//loader
-function preloader() {
-    $('#preloader').hide();
-    $('.loading').css('visibility', 'visible');
-    //all pages tile fade in
-    $('.post-title').addClass('animated fadeIn');
-    
-    //post page aniamtions
-    $('#post-conent h1').addClass('animated slideInUp');
-    $('#post-conent .post-content').addClass('animated fadeIn delay-1s');
-};
-
-function hideJavascriptTag(){
-    var links = $('.post-list-tags a');
-    for (let i = 0; i < links.length; i++) {
-        const element = links[i];
-        var isSpanHasJs = element.firstElementChild.textContent.toLowerCase().includes('javascript')
-        if(isSpanHasJs){
-            $(element).hide();
-        } 
-    }
-}
