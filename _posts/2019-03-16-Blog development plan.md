@@ -23,8 +23,8 @@ comments: true
 - [x] Update description -- I deleted, nothing to say
 - [x] Update social media info and icons
 - [x] Update "About Me"
-- [x] Update backgroud wall paper ★
-- [x] Add mouse tracking animation -- Inspried by [link](https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html)
+- [x] Update backgroud wall paper 
+- [x] <mark>Add mouse tracking animation</mark> -- Inspried by [link](https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html)
 
 ## Post Page
 - [x] add page navigation -- prev and next
@@ -36,7 +36,7 @@ comments: true
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
-- Finished with new button on click style and animations ★ 
+- <mark>Finished with new button on click style and animations</mark> ★ 
 
 ## Navigation Bar
 - [x] Re-design "Tags" Menu
@@ -45,7 +45,7 @@ comments: true
 ## Global Elements
 - [ ] Google analysis
 - [x] delete RED background color while redirecting to a new page
-- [x] new button style -- Material Butoon finished! ★ 
+- [x] <mark>new button style -- Material Butoon finished!</mark> ★ 
 - [x] Links and buttons add on click animation
 - [ ] Preloader animation ★ 
 
@@ -57,3 +57,4 @@ comments: true
 - [x] Re-design project page with images
 - [ ] Resume page
 - [x] New Comment System - [Link:](https://valine.js.org/)
+- [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/)
