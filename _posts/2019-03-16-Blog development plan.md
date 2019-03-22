@@ -4,6 +4,7 @@ title: Development Plan for My Blog
 date: 2019-03-16
 tags: [githubpage, jekyll]
 comments: true
+mark: pin
 ---
 
 >Current blog derives from [Moon Jekyll Theme](https://github.com/TaylanTatli/Moon), and I am keeping adding new features and making improvemnt. This post is a record of what I did and I am planning to do.
@@ -57,8 +58,11 @@ comments: true
 
 - [x] New theme color - blue [Reference:](https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/)
 
+## Porject
+- [x] New UI with images 
+    - [Ref-1](https://codemyui.com/blog-card-image-left-right/) - [Ref-2](https://codemyui.com/masonry-layout-card-ui-for-blogs/)
+
 ## What's New
-- [x] Re-design project page with images
 - [ ] Resume page
 - [x] New Comment System - [Link:](https://valine.js.org/)
 - [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
