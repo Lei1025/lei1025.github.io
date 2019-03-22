@@ -123,7 +123,7 @@ function preloader() {
     $('.post-title').addClass('animated fadeIn');
     
     //post page aniamtions
-    $('#post-conent h1')..addClass('animated slideInUp');
+    $('#post-conent h1').addClass('animated slideInUp');
     $('#post-conent .post-content').addClass('animated fadeIn delay-1s');
 };
 
