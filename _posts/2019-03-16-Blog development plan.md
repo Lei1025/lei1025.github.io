@@ -23,8 +23,8 @@ comments: true
 - [x] Update description -- I deleted, nothing to say
 - [x] Update social media info and icons
 - [x] Update "About Me"
-- [x] Update backgroud wall paper ★
-- [x] Add mouse tracking animation -- Inspried by [link](https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html)
+- [x] Update backgroud wall paper 
+- [x] <mark>Add mouse tracking animation</mark> -- Inspried by [link](https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html)
 
 ## Post Page
 - [x] add page navigation -- prev and next
@@ -45,7 +45,7 @@ comments: true
 ## Global Elements
 - [ ] Google analysis
 - [x] delete RED background color while redirecting to a new page
-- [x] new button style -- Material Butoon finished! ★ 
+- [x] <mark>new button style -- Material Butoon finished!</mark> ★ 
 - [x] Links and buttons add on click animation
 - [ ] Preloader animation ★ 
 
