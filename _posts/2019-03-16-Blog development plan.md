@@ -21,8 +21,8 @@ comments: true
 ## Home Page
 
 - [x] Update description -- I deleted, nothing to say
-- [ ] Update social media info and icons
-- [ ] Update "About Me"
+- [x] Update social media info and icons
+- [x] Update "About Me"
 - [x] Update backgroud wall paper ★
 - [x] Add mouse tracking animation -- Inspried by [link](https://tympanus.net/Development/AnimatedHeaderBackgrounds/index.html)
 
