@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Escape Greater Than and Less Than Sign in XSL Script
+title: How to Escape Greater Than (>) and Less Than (<) Sign in XSL Script
 date: 2019-02-01
 tags: [js, javascript, css, xsl, script]
 mark: star
