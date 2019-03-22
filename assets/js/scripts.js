@@ -76,7 +76,7 @@ function preloader() {
     $('#preloader').hide();
     $('.loading').css('visibility', 'visible');
     //all pages tile fade in
-    $('.post-title').addClass('animated fadeIn');
+    $('not(#post-conent) .post-title').addClass('animated fadeIn');
     
     //post page aniamtions
     $('#post-content h1').addClass('animated slideInUp');
