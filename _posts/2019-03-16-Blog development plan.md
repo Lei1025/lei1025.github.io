@@ -36,7 +36,7 @@ comments: true
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
-- Finished with new button on click style and animations ★ 
+- <mark>Finished with new button on click style and animations</mark> ★ 
 
 ## Navigation Bar
 - [x] Re-design "Tags" Menu
