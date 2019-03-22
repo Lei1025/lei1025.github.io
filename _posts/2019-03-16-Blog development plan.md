@@ -17,6 +17,7 @@ comments: true
 - [x] Add tags under abstract
 - [x] New abstract styling
 - [x] Change show up animations
+- [ ] [Pagination](https://jekyllrb.com/docs/pagination/)
 
 ## Home Page
 
@@ -32,7 +33,8 @@ comments: true
 - [x] New header color
 - [x] New code block style
 - [x] page tile and page content show up animation
-- [ ] Create an edit button or link
+- [ ] Create an edit button or link -- [see "post path"](https://jekyllrb.com/docs/variables/)
+- [ ] Add line number [link](https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript)
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
@@ -60,3 +62,4 @@ comments: true
 - [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
     - http://scrollnav.com/ 
     - http://davist11.github.io/jQuery-One-Page-Nav/
+
