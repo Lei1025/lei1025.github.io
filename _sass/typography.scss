@@ -8,7 +8,7 @@
 	text-rendering: optimizelegibility !important;
 	//text-align: justify;
 	@media #{$small} {
-		padding: 0 .5em;
+		padding: 0em;
 	}
 }
 
@@ -37,7 +37,7 @@
 
 .post-content {
     h1 {
-	border-bottom: 2px solid $green;
+	border-bottom: 2px solid $blue;
 }
 	h1, h2, h3{
 		color: $font_black;

@@ -25,5 +25,12 @@
                         {% if site.keybase %}<a class="social-btn" href="https://keybase.io/{{ site.keybase }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-key"></i></a>{% endif %}
                         {% if site.xmpp %}<a class="social-btn" href="xmpp:{{ site.xmpp }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-lightbulb-o"></i></a>{% endif %}
                         {% if site.hackernews %}<a class="social-btn" href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i></a>{% endif %}
-                        {% if site.wechat %}<a class="social-btn" href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-wechat"></i></a>{% endif %}              
+                        {% if site.wechat %}<a id = "home-wechat"class="social-btn" href="javascript: dismissWechatIcon()" rel="noopener noreferrer"><i class="fa fa-fw fa-wechat" ></i></a><img class="wechat-qr"src="/assets/img/wechat-qr.jpeg">
+                            <script>
+                            function dismissWechatIcon(){
+                                $("#home-wechat").hide();
+                                $('.wechat-qr').css('display', 'inline').addClass('animated zoomIn');
+                            }
+                            </script>
+                        {% endif %}              
                 </h3>
