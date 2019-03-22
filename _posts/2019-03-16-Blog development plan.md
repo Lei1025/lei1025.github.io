@@ -18,6 +18,8 @@ comments: true
 - [x] New abstract styling
 - [x] Change show up animations
 - [ ] [Pagination](https://jekyllrb.com/docs/pagination/)
+- [ ] Pin to top funciton
+- [ ] "Star" page icon
 
 ## Home Page
 
