@@ -119,8 +119,10 @@ $(document).ready(function () {
 function preloader() {
     $('#preloader').hide();
     $('.loading').css('visibility', 'visible');
+    //all pages tile fade in
     $('.post-title').addClass('animated fadeIn');
-    $('.post-content').addClass('animated fadeInUp');
+    //post page aniamtions
+    $('.post-content').addClass('animated fadeIn delay-1s');
 };
 
 function hideJavascriptTag(){
