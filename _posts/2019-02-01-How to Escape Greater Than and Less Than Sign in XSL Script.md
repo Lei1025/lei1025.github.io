@@ -30,6 +30,7 @@ I am feeling sick of embedding `Javascript` code in `xsl`, particularity working
 ```
 
 2. Call "JavaScript" Template
+
 ```html
 <xsl:template match="/">
     <xsl:call-template name="javascript">
