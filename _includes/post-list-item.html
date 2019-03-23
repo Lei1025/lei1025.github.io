@@ -1,11 +1,17 @@
 <ul class="wow flipInX">
     <div class="post-list-content">
-        <li><a class="zoombtn drop-down-underline" href="{{ site.url }}{{ post.url }}">{{
-                    post.title }}</a>
+        <li>
+            {% if post.pin == true %}
+            <i class="fas fa-fw fa-thumbtack"></i>
+            {% endif %}
+            <a class="zoombtn drop-down-underline" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            {% if post.mark %}
+            <i class="fas fa-fw fa-{{ post.mark }}"></i>
+            {% endif %}
             <p>{{ post.excerpt }}</p>
             <div class="post-list-footer">
                 <div class="post-datetime">
-                    <i class="fa fa-calendar"></i>
+                    <i class="fas fa-calendar-alt"></i>
                     <i> {{ post.date | date:'%b %d, %Y' }} {% if post.update %}| Updated:
                         {{ post.update | date: "%b %-d, %Y"}}{% endif %} </i>
                 </div>

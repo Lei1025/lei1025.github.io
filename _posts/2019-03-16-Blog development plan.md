@@ -4,7 +4,7 @@ title: Development Plan for My Blog
 update: 2019-03-20
 tags: [githubpage, jekyll]
 comments: true
-mark: pin
+pin: true
 ---
 
 >Current blog derives from [Moon Jekyll Theme](https://github.com/TaylanTatli/Moon), and I am keeping adding new features and making improvemnt. This post is a record of what I did and I am planning to do.

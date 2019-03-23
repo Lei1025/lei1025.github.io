@@ -104,11 +104,12 @@
 			position: absolute;
 			top: 0;
 			line-height: 40px;
-			font-family: 'fontawesome';
+			//font-family: 'fontawesome';
 			color: $white;
 			speak: none;
+			font-weight: bold;
 			-webkit-font-smoothing: antialiased;
-			content: "\f105";
+			content: ">";
 		}
 		&.dl-back:after {
 			left: 10px;
