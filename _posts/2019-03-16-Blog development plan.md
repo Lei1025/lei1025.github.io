@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development Plan for My Blog
-date: 2019-03-16
+update: 2019-03-20
 tags: [githubpage, jekyll]
 comments: true
 mark: pin

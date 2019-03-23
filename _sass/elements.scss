@@ -295,7 +295,6 @@ kbd {
         }
 
         p {
-            line-height: 1rem;
             //font-weight: lighter;
             @include font-rem(15);
         }
@@ -309,8 +308,6 @@ kbd {
     .post-datetime,
     .post-list-tags {
         display: inline-block;
-
-
     }
 
     .post-datetime {

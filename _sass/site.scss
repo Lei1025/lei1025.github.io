@@ -139,24 +139,6 @@ body {
     }
 }
 
-#disqus_thread {
-    width: 75%;
-    max-width: 850px;
-    margin: -3rem auto 4rem;
-    background: $white;
-    color: $font_black;
-    padding: 2em;
-    border-radius: 3px;
-    box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
-    @include transition(.5s);
-
-    @media #{$small} {
-        width: 90%;
-        padding: 2em 0;
-        box-shadow: none;
-    }
-}
-
 // entry meta
 .entry-meta {
     @include font-rem(14);
@@ -289,4 +271,10 @@ body {
 
 .tag-name {
     text-transform: capitalize;
+}
+
+img.icon{
+    height: 1em;
+    width: 1em;
+    fill: $font_gray;
 }

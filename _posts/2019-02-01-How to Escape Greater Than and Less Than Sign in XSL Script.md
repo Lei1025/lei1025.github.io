@@ -2,14 +2,15 @@
 layout: post
 title: How to Escape Greater Than (>) and Less Than (<) Sign in XSL Script
 date: 2019-02-01
-tags: [js, javascript, css, xsl, script]
+tags: [js, javascript, css, XSL, script]
+pin: true
 mark: star
 comments: true
 ---
 
-> This is the solution to embed `>` and `<` in `Javascript` of `XSL` file
+> This is the solution to embed '>' and '<' in 'Javascript' of 'XSL' file
 
-I am feeling sick of embedding `Javascript` code in `xsl`, particularity working with `>` and `<`. All in All, I do not know why `xsl` deals with `<script>` and `<xsl:script>` especially.  If using `<![CDATA[]]> `，`<xsl:text disable-output-escaping="yes">`,  `>` and `>` will output as `&gt;` and `&lt;` or throw an error. If using `&gt;` and `&lt;`, it outut `&gt;`, `&lt;` exactly the same, which is special only (or at leaat) in between `<script>` or `<xsl:script>`. Having failed googling, eventually I found the solution in our project: escaping the `<` and `>` signs for `<script>` tag instead of escaping in Javascript code for them.
+I am feeling sick of embedding `Javascript` code in `XSL`, particularity working with `>` and `<`. All in All, I do not know why `XSL` deals with `<script>` and `<xsl:script>` especially.  If using `<![CDATA[]]> `，`<xsl:text disable-output-escaping="yes">`,  `>` and `>` will output as `&gt;` and `&lt;` or throw an error. If using `&gt;` and `&lt;`, it outut `&gt;`, `&lt;` exactly the same, which is special only (or at leaat) in between `<script>` or `<xsl:script>`. Having failed googling, eventually I found the solution in our project: escaping the `<` and `>` signs for `<script>` tag instead of escaping in Javascript code for them.
 
 ### Javascipt `<script>`
 
@@ -68,4 +69,4 @@ Thus, we can do the same thing on embedding css code.
 </xsl:template>
 ```
 
->`xsl` is powerful, but some tricks are really painful.
+>`XSL` is powerful, but some tricks are really painful.

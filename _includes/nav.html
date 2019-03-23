@@ -1,5 +1,5 @@
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tags_list = site_tags | split:',' | sort %}
+{% assign tags_list = site_tags | split:',' | sort_natural %}
 
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
     <button class="dl-trigger">Open Menu</button>

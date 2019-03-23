@@ -24,9 +24,9 @@ $(document).ready(function () {
     preloader();
 
     //tags page
-    if(window.location.pathname.includes('tags')){
-      var tagName = window.location.hash.substr(1);
-      $("article[id=\'"+tagName+"\']").show().addClass('animated fadeIn');
+    if (window.location.pathname.includes('tags')) {
+        var tagName = window.location.hash.substr(1);
+        $("article[id=\'" + tagName + "\']").show().addClass('animated fadeIn');
     }
 
     $('.entry-meta .tag').click(function () {
@@ -34,7 +34,7 @@ $(document).ready(function () {
         $(this).parent().siblings().children('a').removeClass('hovered animated pulse');
         var tagName = $(this).find('span.term').text();
         console.log(tagName);
-        $("article[id=\'"+tagName+"\']").show().addClass('animated fadeIn').siblings('article').hide();
+        $("article[id=\'" + tagName + "\']").show().addClass('animated fadeIn').siblings('article').hide();
     });
 
     //do not show javascript tag if js exists due to limitaion of space
@@ -75,22 +75,20 @@ $(document).ready(function () {
 function preloader() {
     $('#preloader').hide();
     $('.loading').css('visibility', 'visible');
+
     //all pages tile fade in
-    $('div:not('#post-content') .post-title').addClass('animated fadeIn');
-    
-    //post page aniamtions
-    $('#post-content h1').addClass('animated slideInUp');
-    $('#post-content .post-content').addClass('animated fadeIn delay-1s');
+    $('.post-title').addClass('animated fadeIn');
+    $('.post-content').addClass('animated bounceInUp');
 };
 
-function hideJavascriptTag(){
+function hideJavascriptTag() {
     var links = $('.post-list-tags a');
     for (let i = 0; i < links.length; i++) {
         const element = links[i];
         var isSpanHasJs = element.firstElementChild.textContent.toLowerCase().includes('javascript')
-        if(isSpanHasJs){
+        if (isSpanHasJs) {
             $(element).hide();
-        } 
+        }
     }
 }
 
@@ -98,23 +96,18 @@ function hideJavascriptTag(){
 (function ($) {
     $.fn.rkmd_rippleEffect = function () {
         var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
-
         btn = $(this).not('[disabled], .disabled');
-
         btn.on('mousedown', function (e) {
             self = $(this);
-
             // Disable right click
             if (e.button === 2) {
                 return false;
             }
-
             if (self.find('.ripple').length === 0) {
                 self.prepend('<span class="ripple"></span>');
             }
             ripple = self.find('.ripple');
             ripple.removeClass('animated');
-
             eWidth = self.outerWidth();
             eHeight = self.outerHeight();
             size = Math.max(eWidth, eHeight);
@@ -122,19 +115,15 @@ function hideJavascriptTag(){
                 'width': size,
                 'height': size
             });
-
             rippleX = parseInt(e.pageX - self.offset().left) - (size / 2);
             rippleY = parseInt(e.pageY - self.offset().top) - (size / 2);
-
             ripple.css({
                 'top': rippleY + 'px',
                 'left': rippleX + 'px'
             }).addClass('animated');
-
             setTimeout(function () {
                 ripple.remove();
             }, 800);
-
         });
     };
 }(jQuery));
