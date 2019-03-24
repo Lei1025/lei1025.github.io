@@ -346,7 +346,7 @@ kbd {
 }
 
 //post page navigation link
-.PageNavigation {
+.pagenavigation {
     font-size: 14px;
     display: block;
     width: auto;
@@ -499,4 +499,11 @@ kbd {
 
 .fa-star {
     color:$yellow;
+}
+
+.no-hover-effect{
+    &:hover{
+        cursor: default;
+        color: inherit;
+    }
 }

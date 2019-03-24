@@ -25,7 +25,7 @@ layout: compress,
                     <h3>{{ page.date | date: '%B %d, %Y' }}</h3>
                     {% if site.reading_time %}
                     <p class="reading-time">
-                        <i class="far fa-clock"></i>
+                        <a class="no-hover-effect" href="https://github.com/Lei1025/lei1025.github.io/blob/master/{{ page.path }}" target="_blank"><i class="far fa-clock"></i></a>
                         {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
@@ -56,22 +56,9 @@ layout: compress,
                     </div>
                     <div style="clear:both"></div>
                 </div>
-
-                <div class="PageNavigation">
-                    {% if page.previous.url %}
-                    <div class="next">
-                        <span>NEXT: &#8811;</span>
-                        <a class="drop-down-underline ripple-btn"
-                            href="{{page.previous.url}}">{{page.previous.title}}</a>
-                    </div>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <div class="prev">
-                        <span>&#8810; PREV:</span>
-                        <a class="drop-down-underline ripple-btn" href="{{page.next.url}}">{{page.next.title}}</a>
-                    </div>
-                    {% endif %}
-                </div>
+                {% if page.pin != true %}
+                    {% include pagenavigation.html %}
+                {% endif %}
             </div>
         </div>
     </header>
