@@ -9,11 +9,24 @@ comments: false
 {% assign tags_list = site_tags | split:',' | sort_natural %}
 
 <ul class="entry-meta inline-list">
+  <!--marked as star posts-->
+  	<li><a class="tag ripple-btn"><span class="term">stared</span> <span class="count"><i class="fas fa-fw fa-star"></i></span></a></li>
+  
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   	<li><a class="tag ripple-btn"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul>
+
+
+<article id="stared" style="display:none">
+    <h2 class="tag-heading tag-name"><i class="fas fa-fw fa-star"></i></h2>
+    <ul>
+        {% for post in site.posts %}{% if post.mark == "star" %}
+        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="drop-down-underline">{{ post.date | date: '%m/%d/%Y' }} ---- {{ post.title }}</a></li>
+        {% endif %}{% endfor %}
+    </ul>
+</article>
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
