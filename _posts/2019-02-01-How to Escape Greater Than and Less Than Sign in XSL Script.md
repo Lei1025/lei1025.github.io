@@ -3,7 +3,7 @@ layout: post
 title: How to Escape Greater Than (>) and Less Than (<) Sign in XSL Script
 date: 2019-02-01
 tags: [js, javascript, css, XSL, script]
-pin: true
+mark: star
 comments: true
 ---
 
