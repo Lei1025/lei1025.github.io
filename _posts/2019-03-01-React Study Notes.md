@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "React Study Notes" 
-date: 2019-03-01
+date: 2019-03-24
 tags: [react, studynotes]
 comments: true
 ---
