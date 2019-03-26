@@ -371,3 +371,72 @@ All this is done for any sub-level being entered.
 .dl-menuopen li {
 	display: block
 }
+
+//scroll nav
+.scroll-nav {
+	background-color: #f8f9fa;
+	border: 1px solid #a2a9b1;
+	padding: 15px 10px;
+	position: sticky;
+	top: 10px;
+	
+	@media screen and (min-width: 700px) {
+	  float: left;
+	  padding: 15px 10px;
+	  width: 200px;
+	  
+	  top: 60px;
+	}
+	
+	@media screen and (min-width: 1000px) {
+	  width: 300px;
+	}
+  }
+  
+  .scroll-nav__list {
+	margin: 0;
+	padding-left: 1.4em;
+	list-style-type: none;
+  }
+    
+  .scroll-nav__item {
+	margin-bottom: 5px;
+  }
+  
+  .scroll-nav__item--active {
+	font-weight: 600;
+	position: relative;
+	
+	&:before {
+	  content: '';
+	  display: block;
+	  width: 14px;
+	  height: 14px;
+	  background: black;
+	  position: absolute;
+	  left: -20px;
+	  top: 2px;
+	}
+  
+  }
+  
+  .scroll-nav__link {
+	color: #0645ad;
+	text-decoration: none;
+	//display: block;
+	//margin: 0 auto;
+	//padding-left: 42px;
+  }
+  
+  .post__article {
+	padding: 20px;
+	
+	@media screen and (min-width: 700px) {
+	  margin-left: 210px;
+	  padding: 30px;
+	}
+	
+	@media screen and (min-width: 1000px) {
+	  margin-left: 310px;
+	}
+  }

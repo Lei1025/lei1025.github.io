@@ -511,3 +511,14 @@ kbd {
         color: inherit;
     }
 }
+
+.tag-archive-item{
+    font-size: 0.8em;
+    float: right;
+    .fa-tag{
+        color: $blue
+    }
+    .tag-name{
+        color: $light_gray
+    }
+}
