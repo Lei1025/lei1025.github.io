@@ -38,6 +38,7 @@ pin: true
 - [x] page tile and page content show up animation
 - [ ] Create an edit button or link -- [see "post path"](https://jekyllrb.com/docs/variables/)
 - [ ] Add line number [link](https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript)
+- [ ] [Lazy load Images](https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/)
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
