@@ -69,6 +69,7 @@ pin: true
 - [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
     - http://scrollnav.com/ 
     - http://davist11.github.io/jQuery-One-Page-Nav/
+- [ ] [Side button](https://codemyui.com/pure-css-sliding-navigation-button-animation/)
 - [ ] [Progress Nav](https://lab.hakim.se/progress-nav/)
 - [ ] [load progress bar](https://github.hubspot.com/pace/docs/welcome/)
 - [ ] [Post Archive page](https://github.com/jekyll/jekyll-archives)
