@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development Plan for My Blog
-update: 2019-03-26
+update: 2019-03-27
 tags: [githubpage, jekyll]
 comments: true
 pin: true
@@ -70,3 +70,4 @@ pin: true
     - http://davist11.github.io/jQuery-One-Page-Nav/
 - [ ] [Progress Nav](https://lab.hakim.se/progress-nav/)
 - [ ] [load progress bar](https://github.hubspot.com/pace/docs/welcome/)
+- [ ] [Post Archive page](https://github.com/jekyll/jekyll-archives)
