@@ -132,9 +132,11 @@ body {
     box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
     @include transition(.5s);
 
-    @media #{$large} {
-        margin:4rem;
-    }
+    &#post-content{
+        @media #{$large} {
+            margin:4rem 2rem;
+        }
+    } 
 
     @media #{$small} {
         width: 90%;
