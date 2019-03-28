@@ -417,6 +417,9 @@ All this is done for any sub-level being entered.
     background: $red;
     text-decoration: none;
     @include transition(0.5s);
+    &:hover{
+        colro:$light-gray
+    }
 }
 
 .scroll-nav__link {
