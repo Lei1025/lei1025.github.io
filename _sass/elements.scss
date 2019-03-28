@@ -8,6 +8,12 @@
     background: $white;
     color: $color_shark;
 
+    &:link{
+        color:$font_gray
+    }
+    &:visited{
+        color:$font_gray
+    }
     &:hover {
         box-shadow: 0 0 1px 0 rgba($color_shark, 0.5);
         color: $blue;
@@ -27,6 +33,7 @@
     @include font-rem(14);
     margin: 4px auto;
     @extend %btnextend;
+
 
     &.btn-success {
         background-color: $success;
@@ -396,13 +403,16 @@ kbd {
     $duration: 0.2s;
     $distance: 8px;
     $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
     text-decoration: none;
     position: relative;
     padding-bottom: 6px;
-
-    &:hover {
+ 
+    &:hover{
         color: $font-gray;
+    }
+
+    &:visited{
+        color: inherit;
     }
 
     &:before,
@@ -505,8 +515,9 @@ kbd {
     color:$blue;
 }
 
-.no-hover-effect{
-    &:hover{
+.no-effect-link{
+    color: inherit;
+    &:link, &:hover, &:visited{
         cursor: default;
         color: inherit;
     }

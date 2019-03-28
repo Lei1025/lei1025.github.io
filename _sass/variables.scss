@@ -45,7 +45,10 @@ $doc-font-size       : 16;
 $doc-line-height     : 26;
 
 //media
-$small               : "only screen and (max-width: 30em)";
-$medium              : "only screen and (min-width: 30.1em) and (max-width: 48em)";
-$large               : "only screen and (min-width: 48.1em) and (max-width: 62.5em)";
-$notsmall            : "only screen and (min-width: 48em)";
+$xsmall              : "only screen and and (max-width: 576px)";
+$small               : "only screen and (min-width: 576px) and (max-width: 768px)";
+$medium              : "only screen and (min-width: 768px) and (max-width: 992px)";
+$large               : "only screen and (min-width: 992px) and (max-width: 1200px)";
+$xlarge              : "only screen and (min-width: 1200px)";
+$notsmall            : "only screen and (min-width: 768px)";
+$notlarge           : "only screen and (max-width: 992px)";

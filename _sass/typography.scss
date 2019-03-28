@@ -81,13 +81,13 @@ a {
   transition: color .4s;
   color: $light_gray;
   &:link {
-  	color: $font_gray;
+  	color: $red;
   }
   &:visited {
-  	color: $font_gray;
+  	color: $red;
   }
   &:hover {
-  	color: $blue;
+  	color: $font_gray;
   }
   &:active {
   	transition: color .3s;

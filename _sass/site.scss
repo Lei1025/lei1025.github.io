@@ -9,12 +9,12 @@
 
 ::selection {
     color: $white;
-    background: $blue;
+    background: $red;
 }
 
 html {
     @extend %extend1;
-    scroll-behavior: smooth;
+   // scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
     font-family: $font1;
     @include font-rem($doc-font-size);
     color: $font_black;
-    background-color: $blue;
+    background-color: $light_gray;
     background-position: center center;
     background-attachment: fixed;
 
@@ -131,6 +131,10 @@ body {
     border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
     @include transition(.5s);
+
+    @media #{$large} {
+        margin:4rem;
+    }
 
     @media #{$small} {
         width: 90%;

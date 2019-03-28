@@ -6,7 +6,7 @@ layout: compress,
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html lang="en" class="no-js">
 <!--<![endif]-->
 
 <head>
@@ -25,7 +25,7 @@ layout: compress,
                     <h3>{{ page.date | date: '%B %d, %Y' }}</h3>
                     {% if site.reading_time %}
                     <p class="reading-time">
-                        <a class="no-hover-effect" href="https://github.com/Lei1025/lei1025.github.io/blob/master/{{ page.path }}" target="_blank"><i class="far fa-clock"></i></a>
+                        <a class="no-effect-link" href="https://github.com/Lei1025/lei1025.github.io/blob/master/{{ page.path }}" target="_blank"><i class="far fa-clock"></i></a>
                         {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
@@ -38,7 +38,7 @@ layout: compress,
                         </a>
                 </div>
                 <hr>
-                <div class='post-content'>
+                <div class='post-content post-article'>
                     {{ content }}
                     {% if page.update %}
                     <lable style="float:right; font-style: italic">--Updated: {{ page.update | date: "%b %-d, %Y"}}--</lable>

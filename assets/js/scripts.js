@@ -20,15 +20,16 @@ $(function() {
     $(".content").fitVids();
 });
 
-/*
+//Scroll Nav
 $(function(){
-    const content = document.querySelector('.post__article');
-
+    const content = document.querySelector('.post-article');
     scrollnav.init(content, { 
-      debug: false
+      debug: false,
+      //easingStyle: 'linear',
+      sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
+      subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
     });
 });
-*/
 
 // All others
 $(document).ready(function() {
@@ -44,6 +45,9 @@ $(document).ready(function() {
     imagePopup();
     //material button
     $(".ripple-btn").rkmd_rippleEffect();
+
+    sideNav();
+    window.addEventListener("resize", sideNav);
 });
 
 //loader
@@ -54,6 +58,12 @@ function preloader() {
     //all pages tile fade in
     $(".post-title").addClass("animated fadeIn");
     $(".post-content").addClass("animated bounceInUp");
+}
+
+function sideNav(){
+    var mainRect = document.getElementById('post-content').getBoundingClientRect();
+    var oldReac = document.getElementsByClassName('scroll-nav')[0].getBoundingClientRect();
+    $('#post-content > div.content.loading > nav').css('left', mainRect.right+10+'px'); 
 }
 
 function hideJavascriptTag() {
@@ -117,7 +127,6 @@ function tagsPage() {
         $(this).addClass('hovered animated pulse')
         $(this).parent().siblings().children('a').removeClass('hovered animated pulse');
         var tagName = $(this).find('span.term').text();
-        console.log(tagName);
         $("article[id=\'" + tagName + "\']").show().addClass('animated fadeIn').siblings('article').hide();
     });
 }
