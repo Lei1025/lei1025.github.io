@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development Plan for My Blog
-update: 2019-03-26
+update: 2019-03-27
 tags: [githubpage, jekyll]
 comments: true
 pin: true
@@ -38,6 +38,7 @@ pin: true
 - [x] page tile and page content show up animation
 - [ ] Create an edit button or link -- [see "post path"](https://jekyllrb.com/docs/variables/)
 - [ ] Add line number [link](https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript)
+- [ ] [Lazy load Images](https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/)
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
@@ -68,5 +69,7 @@ pin: true
 - [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
     - http://scrollnav.com/ 
     - http://davist11.github.io/jQuery-One-Page-Nav/
+- [ ] [Side button](https://codemyui.com/pure-css-sliding-navigation-button-animation/)
 - [ ] [Progress Nav](https://lab.hakim.se/progress-nav/)
 - [ ] [load progress bar](https://github.hubspot.com/pace/docs/welcome/)
+- [ ] [Post Archive page](https://github.com/jekyll/jekyll-archives)
