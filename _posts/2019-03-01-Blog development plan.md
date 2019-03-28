@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development Plan for My Blog
-update: 2019-03-27
+update: 2019-03-28
 tags: [githubpage, jekyll]
 comments: true
 pin: true
@@ -19,8 +19,8 @@ pin: true
 - [x] New abstract styling
 - [x] Change show up animations
 - [ ] [Pagination](https://jekyllrb.com/docs/pagination/)
-- [ ] Pin to top funciton
-- [ ] "Star" page icon
+- [x] Pin to top funciton
+- [x] "Star" page icon
 
 ## Home Page
 
@@ -36,7 +36,7 @@ pin: true
 - [x] New header color
 - [x] New code block style
 - [x] page tile and page content show up animation
-- [ ] Create an edit button or link -- [see "post path"](https://jekyllrb.com/docs/variables/)
+- [x] Create an edit button or link -- [see "post path"](https://jekyllrb.com/docs/variables/)
 - [ ] Add line number [link](https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript)
 - [ ] [Lazy load Images](https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/)
 
@@ -49,11 +49,11 @@ pin: true
 - [ ] Hover Events
 
 ## Global Elements
-- [ ] Google analysis
+- [x] Google analysis
 - [x] delete RED background color while redirecting to a new page
 - [x] <mark>new button style -- Material Butoon finished!</mark> ★ 
 - [x] Links and buttons add on click animation
-- [ ] Preloader animation ★ 
+- [x] Preloader animation ★ 
 
 ~~- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)~~
 
@@ -66,10 +66,11 @@ pin: true
 ## What's New
 - [ ] Resume page
 - [x] New Comment System - [Link:](https://valine.js.org/)
-- [ ] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
+- [x] Add Scrollspy Element on post list and post pages -- [Like Bootstrap](https://getbootstrap.com/docs/4.0/components/scrollspy/) 
     - http://scrollnav.com/ 
     - http://davist11.github.io/jQuery-One-Page-Nav/
-- [ ] [Side button](https://codemyui.com/pure-css-sliding-navigation-button-animation/)
-- [ ] [Progress Nav](https://lab.hakim.se/progress-nav/)
+    - [Side button](https://codemyui.com/pure-css-sliding-navigation-button-animation/)
 - [ ] [load progress bar](https://github.hubspot.com/pace/docs/welcome/)
 - [ ] [Post Archive page](https://github.com/jekyll/jekyll-archives)
+- [ ] [SEO tag](https://github.com/jekyll/jekyll-seo-tag)
+
