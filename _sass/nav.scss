@@ -390,9 +390,9 @@ All this is done for any sub-level being entered.
     }
     
     a:hover {
-        color:$red;
+       color:$red;
     }
-
+    
     &:before {
         content: "CATALOG:";
         font-weight: bold;
