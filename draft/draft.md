@@ -2,10 +2,14 @@
 layout: post
 title: "Implement Scroll Spy in Jekyll without Bootstrap" 
 date: 2019-03-24
-tags: [jekyll, githubPage, scrollspy, scrollnav]
+tags: [jekyll, githubPage, scrollspy, scrollnav,toc]
 comments: true
 ---
 
+>one page navigation 
+
+vertical
+table of content
 Implement Scroll Spy in Jekyll without Bootstrap
 # Install `scrollnav.js` Plugin
 
