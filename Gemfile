@@ -5,5 +5,11 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
+
+
 gem "autoprefixer-rails"
-gem "jekyll-assets"
+gem "uglifier"
+
+group :jekyll_plugins do
+  gem 'jekyll-assets'
+end
