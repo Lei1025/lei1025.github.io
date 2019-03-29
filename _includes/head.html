@@ -77,3 +77,4 @@
     {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
+    <script src="{{ site.url }}/assets/js/jquery-1.12.0.min.js"></script>
