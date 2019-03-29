@@ -36,7 +36,7 @@ Add a class called `post-article` or any other class name to the section/div in 
 > Do not initialize `ScrollNav` in `Ready()`, at least my attempt failed.
 
 Some essential tweaks from original document:
-1. First of all, add `subSection` as showing second level of title is a common requirement of a category,
+1. First of all, add `subSection` as showing second level of titles is a common requirement of a category,
 2. By default, `h2` tags are regraded as the first level title of an article. However, in terms of  my situations, sometimes `h1` is my first level and sometimes `h2` is. So I wrote a Binary Operator dealing with this case.
 3. Other option see: [All Options](http://scrollnav.com/guide/customizing.html)
    
