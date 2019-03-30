@@ -24,8 +24,6 @@ $(function() {
 $(document).ready(function() {
     //preloader animation
     preloader();
-    //do not show javascript tag if js exists due to limitaion of space
-    hideJavascriptTag();
     // go up button
     goUpBtn();
     //image pop up
@@ -42,19 +40,6 @@ function preloader() {
     //all pages tile fade in
     $(".post-title").addClass("animated fadeIn");
     $(".post-content").addClass("animated bounceInUp");
-}
-
-function hideJavascriptTag() {
-    var links = $(".post-list-tags a");
-    for (let i = 0; i < links.length; i++) {
-        const element = links[i];
-        var isSpanHasJs = element.firstElementChild.textContent
-            .toLowerCase()
-            .includes("javascript");
-        if (isSpanHasJs) {
-            $(element).hide();
-        }
-    }
 }
 
 //material button function

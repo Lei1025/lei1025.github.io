@@ -49,8 +49,17 @@ title: ALL POSTS
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
+        /*do not show javascript tag if js exists due to limitaion of space*/
+        hideJavascriptTag();
 
+        function hideJavascriptTag() {
+            var links = $(".post-list-tags a");
+            for (let i = 0; i < links.length; i++) {
+                const element = links[i];
+                var isSpanHasJs = element.firstElementChild.textContent.toLowerCase().includes("javascript");
+                if (isSpanHasJs) $(element).hide();
+            }
+        }
     </script>
 </body>
-
 </html>
