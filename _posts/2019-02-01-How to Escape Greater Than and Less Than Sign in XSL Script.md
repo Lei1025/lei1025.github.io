@@ -11,7 +11,7 @@ comments: true
 
 I am feeling sick of embedding `Javascript` code in `XSL`, particularity working with `>` and `<`. All in All, I do not know why `XSL` deals with `<script>` and `<xsl:script>` especially.  If using `<![CDATA[]]> `，`<xsl:text disable-output-escaping="yes">`,  `>` and `>` will output as `&gt;` and `&lt;` or throw an error. If using `&gt;` and `&lt;`, it outut `&gt;`, `&lt;` exactly the same, which is special only (or at leaat) in between `<script>` or `<xsl:script>`. Having failed googling, eventually I found the solution in our project: escaping the `<` and `>` signs for `<script>` tag instead of escaping in Javascript code for them.
 
-### Javascipt `<script>`
+## Javascipt - `<script>`
 
 1. Js Template
 
@@ -51,7 +51,7 @@ Output from brower:
 
 ![](https://img-blog.csdnimg.cn/20190228014403872.jpg)
 
-### CSS `<style>`
+## CSS - `<style>`
 Thus, we can do the same thing on embedding css code.
 
 ```html

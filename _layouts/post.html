@@ -60,13 +60,34 @@ layout: compress,
             </div>
         </div>
     </header>
+
+    <script src="{{ site.url }}/assets/js/scrollnav.min.umd.js"></script>
+    <script>
+        //Scroll Nav
+        const content = document.querySelector('.post-article');
+        scrollnav.init(content, {
+            debug: false,
+            //easingStyle: 'linear',
+            sections: ($('.post-content > h1').length > 0) ? 'h1' : 'h2',
+            subSections: ($('.post-content > h1').length > 0) ? 'h2' : 'h3'
+        });
+        //Dynamically positon
+        var sideNav = function () {
+            var mainRect = document.getElementById('post-content').getBoundingClientRect();
+            //var oldReac = document.getElementsByClassName('scroll-nav')[0].getBoundingClientRect();
+            $('#post-content > div.content.loading > nav').css('left', mainRect.right + 10 + 'px');
+        }
+
+        sideNav();
+        window.addEventListener("resize", sideNav);            
+    </script>
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
     <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
     <!--social share icons-->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c93e88014e26421"></script>  
+    <script asunc type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c93e88014e26421"></script>  
 </body>
 
 </html>

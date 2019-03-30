@@ -78,4 +78,9 @@
     {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
+    <!--Pace.js-->
+    <script src="{{ site.url }}/assets/js/pace.min.js"></script>
+
+    <link href="{{ site.url }}/assets/css/pace.css" rel="stylesheet" />
+
     <script src="{{ site.url }}/assets/js/jquery-1.12.0.min.js"></script>
