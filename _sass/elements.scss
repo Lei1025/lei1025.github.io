@@ -535,6 +535,7 @@ kbd {
 }
 
 .hover-btn {
+    position: relative;
     margin: 4px;
     font-size: 1em;
     line-height: 1em;
@@ -549,7 +550,6 @@ kbd {
     transform: translate(0, 0);
     transition: 0.5s;
     transition-delay: 0.3s;
-
     border: 1px solid;
     border-color: rgba(229,230,233,0.5) rgba(223,224,228,0.5) #d0d1d5;
     border-radius: 3px;
