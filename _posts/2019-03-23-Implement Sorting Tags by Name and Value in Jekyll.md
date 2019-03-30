@@ -13,7 +13,7 @@ Tags sorted by names are pretty easy by using Jekyll `variables` and `liquid`.
 
 ## List all tags by name in alphabet sequence and its count
 
-{% highlight liquid linenos %}
+```html
 {% raw %}
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tags_list = site_tags | split:',' | sort_natural %}
@@ -30,11 +30,11 @@ Tags sorted by names are pretty easy by using Jekyll `variables` and `liquid`.
   {% endunless %}{% endfor %}
 </ul>
 {% endraw %}
-{% endhighlight %}
+```
 
 ## List all posts of each tags respectively
 
-{% highlight liquid linenos %}
+```html
 {% raw %}
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
 {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
@@ -57,4 +57,4 @@ Tags sorted by names are pretty easy by using Jekyll `variables` and `liquid`.
 </article>
 {% endunless %}{% endfor %}
 {% endraw %}
-{% endhighlight %}
+```
