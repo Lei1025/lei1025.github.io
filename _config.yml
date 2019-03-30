@@ -24,6 +24,9 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
+  syntax_highlighter_opts:
+    block:
+        line_numbers: true
 mathjax:            true
 sass:
   sass_dir:         _sass
@@ -86,7 +89,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-seo-tag
-  
+
 jekyll-mentions:
     base_url: https://github.com
 

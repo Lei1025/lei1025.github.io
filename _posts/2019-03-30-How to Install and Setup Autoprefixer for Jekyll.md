@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How to Install and Setup Autoprefixer for Jekyll" 
-date: 2019-03-24
 tags: [jekyll, githubPage, css, autoprefixer, plugin, install]
 comments: true
 ---
