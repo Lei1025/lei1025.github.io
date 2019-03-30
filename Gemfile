@@ -5,7 +5,7 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
-
+gem 'jekyll-seo-tag'
 
 gem "autoprefixer-rails"
 gem "uglifier"
