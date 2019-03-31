@@ -56,8 +56,6 @@ pin: true
 - [x] Links and buttons add on click animation
 - [x] Preloader animation ★ 
 
-<del>- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)</del>
-
 - [x] New theme color - blue [Reference:](https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/)
 
 ## Porject
