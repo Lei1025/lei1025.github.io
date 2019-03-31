@@ -37,7 +37,7 @@ $("#idForm").submit(function(e) {
 
 ## Post (with data)
 
-```js
+```javascript
 $.post(
   "surveypost.aspx",
   {
@@ -52,7 +52,6 @@ $.post(
 ).done(function() {
     //do something if needed
 });
-
 ```
 
 ## Get

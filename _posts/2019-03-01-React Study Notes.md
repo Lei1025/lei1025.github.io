@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "React Study Notes" 
-date: 2019-03-24
-tags: [react, studynotes]
+update: 2019-03-24
+tags: [react, jsx, studynotes]
+mark: star
 comments: true
 ---
 
 >Study notes while learning React.
 
+{% raw %}
 ## VS Code Shortcuts
 
 imrc --  
@@ -60,12 +62,10 @@ style = {
 
 <span style={this.style}> </span>
 ```
-
-{% raw %}
+<br>
 ```jsx
 <span style={{fontSize: 10, fontWeight:'bold'}}></span>
 ```
-{% endraw %}
 
 ## Quickly create new method in render()
 ```jsx
@@ -153,3 +153,5 @@ render(
 `this.props`
 
 Each react component has a property called `props` which basically is plain `JavsScript` object
+
+{% endraw %}

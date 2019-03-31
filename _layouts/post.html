@@ -22,7 +22,10 @@ layout: compress,
             <div class="content loading">
                 <div class='post-title {% if page.feature %} feature {% endif %}'>
                     <h1>{{ page.title }}</h1>
-                    <h3>{{ page.date | date: '%B %d, %Y' }}</h3>
+                    <h3>{{ page.date | date: '%B %d, %Y' }}
+                        {% if page.update %}
+                        | Updated: {{ page.update | date: "%b %-d, %Y"}}
+                        {% endif %}</h3>
                     {% if site.reading_time %}
                     <p class="reading-time">
                         <a class="no-effect-link" href="https://github.com/Lei1025/lei1025.github.io/blob/master/{{ page.path }}" target="_blank"><i class="far fa-clock"></i></a>
@@ -40,9 +43,6 @@ layout: compress,
                 <hr>
                 <div class='post-content post-article'>
                     {{ content }}
-                    {% if page.update %}
-                    <lable style="float:right; font-style: italic">--Updated: {{ page.update | date: "%b %-d, %Y"}}--</lable>
-                    {% endif %}
                 </div>
                 <div class="entry-meta">
                     <br>

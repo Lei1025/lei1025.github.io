@@ -1,16 +1,12 @@
 ---
 layout: post
 title: "Implement Scroll Spy in Jekyll without Bootstrap" 
-date: 2019-03-24
 tags: [jekyll, githubPage, scrollspy, scrollnav,toc]
 comments: true
 ---
 
->one page navigation 
+>one page navigation, table of content, vertical navigation, scroll navigation
 
-vertical
-table of content
-Implement Scroll Spy in Jekyll without Bootstrap
 # Install `scrollnav.js` Plugin
 
 To simplify this project,I am using [scrollnav.js](http://scrollnav.com/) to help me with. There are a couple of methods to [install](http://scrollnav.com/guide/installing.html) it, but when I tried to host it by myself, an error occurred that it needs one more file end with '.map'. I find it [here](https://unpkg.com/scrollnav@3.0.1/dist/). By the way, if using CDN, exactly working well.
@@ -52,8 +48,8 @@ $(function(){
 });
 ```
 ## CSS Style .scss
-
-```css
+{% raw %}
+```scss
 //scroll nav
 .scroll-nav {
     color: $white;
@@ -114,4 +110,8 @@ $(function(){
     //padding-left: 42px;
 }
 ```
+{% endraw %}
 For more information: [Styling](http://scrollnav.com/guide/styling.html)
+
+# Output
+![](https://raw.githubusercontent.com/Lei1025/ImgRepo/master/myblog/WX20190331-041758%402x.png)
