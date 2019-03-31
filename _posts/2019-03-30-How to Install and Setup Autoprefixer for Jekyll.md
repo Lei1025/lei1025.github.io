@@ -31,7 +31,6 @@ assets:
   plugins:
     css: { autoprefixer: {}}
 ```
-[My _config.yml](https://github.com/Lei1025/lei1025.github.io/blob/master/_config.yml)
 
 ## Run in Terminal
 
