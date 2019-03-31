@@ -31,10 +31,6 @@ Tags sorted by names are pretty easy by using Jekyll `variables` and `liquid`.
 </ul>
 ```
 {% endraw %}
----
-If just need name sort function, stop reading from here as I am not confident the following is a good solution.
-
----
 
 ## List all posts of each tags respectively
 
@@ -63,6 +59,8 @@ If just need name sort function, stop reading from here as I am not confident th
 ```
 {% endraw %}
 
+> I am not confident that the following method is the best solution.
+ 
 # Tags sorted by count
 
 I have tried using `liquid` to achieve this goad, but the result is fail that I can neither make an type like arrays in an array nor pass values to `JavaScript`. So I switched to totally using JS as my solution.

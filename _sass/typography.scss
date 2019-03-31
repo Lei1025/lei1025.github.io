@@ -37,12 +37,22 @@
 }
 
 .post-content {
-    h1 {
-	border-bottom: 2px solid $blue;
-}
-	h1, h2, h3{
+	h1, h2, h3 ,h4, h5, h6{
 		color: $font_black;
 	}
+	
+	h1 {
+		border-bottom: 2px solid $blue;
+	}
+
+	h2 {
+		width: max-content;
+		border-width: 2px;
+		border-style: solid;
+		border-image: linear-gradient(to right, $blue, transparent) 0 0 1 0;
+	}
+     
+
     p{
         @include font-rem(18);
     }
