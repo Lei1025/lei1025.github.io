@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implement Scroll Spy in Jekyll without Bootstrap" 
-tags: [jekyll, githubPage, scrollspy, scrollnav,toc]
+tags: [jekyll, githubPage, scrollspy, scrollnav,TOC]
 comments: true
 ---
 
