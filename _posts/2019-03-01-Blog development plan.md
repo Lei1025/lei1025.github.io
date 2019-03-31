@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development Plan for My Blog
-update: 2019-03-28
+update: 2019-03-31
 tags: [githubpage, jekyll]
 comments: true
 pin: true
@@ -37,12 +37,13 @@ pin: true
 - [x] New code block style
 - [x] page tile and page content show up animation
 - [x] Create an edit button or link -- [see "post path"](https://jekyllrb.com/docs/variables/)
-- [ ] Add line number [link](https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript)
+- [x] Add line number [link](https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript)
 - [ ] [Lazy load Images](https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/)
 
 ## Tags Page
 - [x] update page to react -- do not show all posts at one time. show those what user clicked corresponding tag name. 
 - <mark>Finished with new button on click style and animations</mark> ★ 
+- [x] sort by count
 
 ## Navigation Bar
 - [x] Re-design "Tags" Menu
@@ -55,7 +56,7 @@ pin: true
 - [x] Links and buttons add on click animation
 - [x] Preloader animation ★ 
 
-~~- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)~~
+<del>- [ ] Change markdown tool [link](https://github.com/github/jekyll-commonmark-ghpages)</del>
 
 - [x] New theme color - blue [Reference:](https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/)
 
@@ -70,7 +71,7 @@ pin: true
     - http://scrollnav.com/ 
     - http://davist11.github.io/jQuery-One-Page-Nav/
     - [Side button](https://codemyui.com/pure-css-sliding-navigation-button-animation/)
-- [ ] [load progress bar](https://github.hubspot.com/pace/docs/welcome/)
+- [x] [load progress bar](https://github.hubspot.com/pace/docs/welcome/)
 - [ ] [Post Archive page](https://github.com/jekyll/jekyll-archives)
-- [ ] [SEO tag](https://github.com/jekyll/jekyll-seo-tag)
+- [x] [SEO tag](https://github.com/jekyll/jekyll-seo-tag)
 
