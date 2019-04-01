@@ -68,7 +68,7 @@ comments: false
 
     var ary = [];
     var tags = $("#tag-list .tag");
-    for (let i = 0; i < tags.length; i++) {
+    for (var i = 0; i < tags.length; i++) {
       tagName = $(tags[i]).find('.term').text();
       tagCount = $(tags[i]).find('.count').text();
       ary.push([tagName, tagCount]);
