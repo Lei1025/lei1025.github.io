@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Async Example using 'Task<>' for C# and brief Analysis"
+title: "Async Example Using 'Task<>' for C# with Brief Analysis"
 tags: [c#, .net, async, example]
 comments: true
 ---
