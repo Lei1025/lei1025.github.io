@@ -30,6 +30,7 @@ task.result(); //main thread will wait for result return
 ## Exapmle
 
 TASK 1: Output 1 to 5 successively in an interval of 500ms
+
 TASK 2: Output -1 to -5 successively in an interval of 1000ms then return a value
 
 Cause Task 2 takes longer time, async is better for these time-consuming tasks in practical situations.
@@ -92,7 +93,7 @@ task return value: -99
 The program has exited with code 0 (0x0).
 ```
 
-### If comment `task.Wait()` and `task.Result`
+### If comment 'task.Wait()' and 'task.Result'
 
 ```
 Before task start：Task Status - Created; Thread ID:1
