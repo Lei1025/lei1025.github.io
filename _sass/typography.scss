@@ -94,7 +94,7 @@ a {
   	color: $red;
   }
   &:visited {
-  	color: $red;
+  	color: inherit;
   }
   &:hover {
   	color: $font_gray;
