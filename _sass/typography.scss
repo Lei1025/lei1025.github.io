@@ -126,8 +126,9 @@ li pre {
 }
 li .highlight code,
 li .highlight pre {
-    background-color: transparent;
-    border: 0;
+    all: unset;
+    //background-color: transparent;
+    //border: 0;
 }
 
 
