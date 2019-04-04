@@ -110,22 +110,25 @@ pre, code {
 	font-family: $font2;
 	overflow-x: auto;
     background-color: $light_gray;
+    color: $white;
+    @include rounded(4px);
+    margin: 0 2px;
+    padding: 0 5px;
+    font-size: 0.9em;
 }
 p code,
 li code,
 p pre,
 li pre {
-    @include font(16);
-	color: $white;
+    //@include font(16);
     //border: 1px solid $color_mischka;
-    @include rounded(4px);
-    margin: 0 2px;
-    padding: 0 5px;
+
 }
 li .highlight code,
 li .highlight pre {
-    background-color: transparent;
-    border: 0;
+    all: unset;
+    //background-color: transparent;
+    //border: 0;
 }
 
 
