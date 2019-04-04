@@ -109,13 +109,13 @@ a {
 pre, code {
 	font-family: $font2;
 	overflow-x: auto;
+    background-color: $light_gray;
 }
 p code,
 li code,
 p pre,
 li pre {
     @include font(16);
-	background-color: $light_gray;
 	color: $white;
     //border: 1px solid $color_mischka;
     @include rounded(4px);
