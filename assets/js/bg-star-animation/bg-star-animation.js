@@ -35,7 +35,7 @@ function main() {
     addListeners();
 
     function initHeader() {
-        width = window.innerWidth-10;
+        width = window.innerWidth-20;
         height = document.documentElement.scrollHeight;
         target = { x: width / 2, y: height / 2 };
 
@@ -140,7 +140,7 @@ function main() {
     }
 
     function resize() {
-        width = window.innerWidth-10;
+        width = window.innerWidth-20;
         height = document.documentElement.scrollHeight;
         //largeHeader.style.height = height + "px";
         canvas.width = width;

@@ -124,13 +124,13 @@ li pre {
     //border: 1px solid $color_mischka;
 
 }
-li .highlight code,
-li .highlight pre {
-    all: unset;
-    //background-color: transparent;
+.highlight code,
+.highlight pre {
+	padding: 0px;
+	margin: 0px;
+	//background-color: transparent;
     //border: 0;
 }
-
 
 // table
 table {
