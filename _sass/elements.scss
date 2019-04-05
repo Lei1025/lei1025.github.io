@@ -408,7 +408,7 @@ kbd {
     padding-bottom: 6px;
 
     &:hover{
-        color: $font-gray;
+        color: $font-gray !important;
     }
 
     &:visited, &:link{
