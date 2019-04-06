@@ -11,7 +11,9 @@ locale:             en_US
 url:                https://lei1025.github.io
 author:             "Lei Liu"
 #url:                http://127.0.0.1:4000 
-
+collections:
+   projects:
+      output: true
 
 # Jekyll
 permalink:          /:title/
