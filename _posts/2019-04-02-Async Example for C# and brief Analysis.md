@@ -113,4 +113,4 @@ The program  has exited with code 0 (0x0).
 
 ## Conclusion
 
-.Net actually creates a new thread for `Task<>`, like "forked" or "sub-threaded" from main thread. According to articles from Google, Task<> performers better than multi-thread and thread poll approach as it utilize the feature of multi-core CPU and consuming resources properly. Thus Task<> is currently best solution to implement async functions with a pretty simple coding style.
+.Net actually creates a new thread for `Task<>`, like "forked" or "sub-threaded" from main thread. According to articles from Google, Task<> performers better than multi-thread and thread pool approach as it utilizes the feature of multi-core CPU and consuming resources properly. Thus Task<> is currently best solution to implement async functions with a pretty simple coding style.
