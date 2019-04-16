@@ -2,6 +2,7 @@
 layout: post
 title: Prevent Triggering Parent's onClick Event in JS
 tags: [js, javascript, regex]
+update: 2019-04-16
 comments: true
 ---
 >One method to disable child nodes inherit parent's onclick event in JS alone with one Js regex practice.
@@ -36,6 +37,7 @@ My current solution is `event.cancelBubble=true`
 ```
 
 --Update April 16--
+
 Reference: [Event Bubbling - Dealing with the child’s parent](https://kamranahmed.info/blog/2014/08/18/event-bubbling-and-how-can-it-be-prevented/)
 
 `stopPropagation()` is another solution
