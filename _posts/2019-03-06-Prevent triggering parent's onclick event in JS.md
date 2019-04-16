@@ -34,3 +34,15 @@ My current solution is `event.cancelBubble=true`
     }
 </script>
 ```
+
+--Update April 16--
+Reference: [Event Bubbling - Dealing with the child’s parent](https://kamranahmed.info/blog/2014/08/18/event-bubbling-and-how-can-it-be-prevented/)
+
+`stopPropagation()` is another solution
+
+```javascript
+$('someElement').on('click', function(e){
+    // stop the event from bubbling.
+    e.stopPropagation();
+});
+```
