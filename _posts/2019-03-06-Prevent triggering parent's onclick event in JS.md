@@ -9,6 +9,8 @@ comments: true
 
 I do remember I read an article about how to deal with event inheritance situations including their triggered order and different methods of prevention, but I can't find it any more :( 
 
+## `event.cancelBubble=true`
+
 My current solution is `event.cancelBubble=true`
 
 ```html
@@ -36,7 +38,7 @@ My current solution is `event.cancelBubble=true`
 </script>
 ```
 
-<hr>
+## `stopPropagation()`
 --Update April 16--
 
 Reference: [Event Bubbling - Dealing with the child’s parent](https://kamranahmed.info/blog/2014/08/18/event-bubbling-and-how-can-it-be-prevented/)
@@ -48,4 +50,21 @@ $('someElement').on('click', function(e){
     // stop the event from bubbling.
     e.stopPropagation();
 });
+```
+## Restrict `event.target`
+
+```javascript
+function dosomething(){
+    //only trigered by specific element
+    if(event.target.tagName.toLowerCase() !== 'button'){
+    //do something
+    }
+    
+    or 
+    
+    if(evet.target === document.getElement(s)by XXXX{
+    //do something
+    }
+    
+}
 ```
