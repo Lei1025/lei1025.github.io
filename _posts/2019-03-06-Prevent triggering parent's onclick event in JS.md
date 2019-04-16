@@ -36,6 +36,7 @@ My current solution is `event.cancelBubble=true`
 </script>
 ```
 
+<hr>
 --Update April 16--
 
 Reference: [Event Bubbling - Dealing with the child’s parent](https://kamranahmed.info/blog/2014/08/18/event-bubbling-and-how-can-it-be-prevented/)
