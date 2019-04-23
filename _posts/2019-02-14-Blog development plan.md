@@ -47,7 +47,8 @@ pin: true
 
 ## Navigation Bar
 - [x] Re-design "Tags" Menu
-- [ ] Hover Events
+- [x] Hover Events
+- [x] "Learn more" button fix link
 
 ## Global Elements
 - [x] Google analysis
