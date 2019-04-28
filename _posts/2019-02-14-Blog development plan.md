@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development Plan for My Blog
-update: 2019-03-31
+update: 2019-04-28
 tags: [githubpage, jekyll]
 comments: true
 pin: true
@@ -56,6 +56,7 @@ pin: true
 - [x] <mark>new button style -- Material Butoon finished!</mark> ★ 
 - [x] Links and buttons add on click animation
 - [x] Preloader animation ★ 
+- [ ] Disable scrolling while preloading
 
 - [x] New theme color - blue [Reference:](https://themes.muffingroup.com/betheme/nam-nec-felis-et-nibh-posuere/)
 
