@@ -20,6 +20,12 @@ $(function() {
     $(".content").fitVids();
 });
 
+$(function(){
+    if($("#preloader").length =! 0){
+        $("body").addClass('stop-scrolling');
+    }
+});
+
 // All others
 $(document).ready(function() {
     //preloader animation
@@ -40,6 +46,10 @@ function preloader() {
     //all pages tile fade in
     $(".post-title").addClass("animated fadeIn");
     $(".post-content").addClass("animated bounceInUp");
+
+    window.onload = function(){
+        $("body").removeClass('stop-scrolling');
+    }   
 }
 
 //material button function
