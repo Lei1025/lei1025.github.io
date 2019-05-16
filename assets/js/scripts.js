@@ -1,3 +1,10 @@
+//disable scrolling while loading
+$(function(){
+    if($("#preloader").length =! 0){
+        $("body").addClass('stop-scrolling');
+    }
+});
+
 // dl-menu options
 $(function() {
     $("#dl-menu").dlmenu({
@@ -18,12 +25,6 @@ $(
 // FitVids options
 $(function() {
     $(".content").fitVids();
-});
-
-$(function(){
-    if($("#preloader").length =! 0){
-        $("body").addClass('stop-scrolling');
-    }
 });
 
 // All others
