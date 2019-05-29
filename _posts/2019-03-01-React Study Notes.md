@@ -152,12 +152,6 @@ render(
 )
 ```
 
-## Passing data
-
-`this.props`
-
-Each react component has a property called `props` which basically is plain `JavsScript` object
-
 ## Zen Coding
 
 Shortcut to get following code:
@@ -176,5 +170,13 @@ Shortcut to get following code:
     </thead>
 </table>;
 ```
+
+## Passing data
+
+`this.props`
+
+Each react component has a property called `props` which basically is plain `JavsScript` object
+
+## state vs props
 
 {% endraw %}
