@@ -140,7 +140,7 @@ function main() {
     }
 
     function resize() {
-        width = window.innerWidth-20;
+        width = document.documentElement.clientWidth-20;
         height = document.documentElement.scrollHeight;
         //largeHeader.style.height = height + "px";
         canvas.width = width;
