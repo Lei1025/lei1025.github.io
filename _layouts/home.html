@@ -8,6 +8,7 @@ layout: compress
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
+    {% include custom-post-list.html %}
 </head>
 <body>
     {% include nav.html %}
@@ -23,6 +24,7 @@ layout: compress
                         	<p style="font-size:1.5rem;font-weight:300;font-family: Aldrich,sans-serif;">{{ site.title }}</p>
 			            </a>
                     </h3>
+                 {{new_post_list}}
                     <!--hr class="hr-line">
                     <h3 class="title">
                         <a href="{{ site.url }}">
