@@ -32,3 +32,32 @@ public class Solution {
     }
 }
 ```
+
+### 169
+
+数组里数元素个数问题用dictionary 解决
+
+### 242
+
+* string to char array
+* sort array
+* array to string
+
+```c#
+public class Solution {
+    public bool IsAnagram(string s, string t) {
+        if(s.Length != t.Length) return false;
+        //string to char array
+        char[] sArray = s.ToCharArray();
+        char[] tArray = t.ToCharArray();
+        //sort
+        Array.Sort(sArray);
+        Array.Sort(tArray);
+        //array to string and compare
+        string sNew = String.Join("",sArray);
+        string tNew = String.Join("",tArray);
+        if(sNew == tNew) return true;
+        return false;
+    }
+}
+```
