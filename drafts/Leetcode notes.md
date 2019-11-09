@@ -61,3 +61,7 @@ public class Solution {
     }
 }
 ```
+
+### 106
+
+平衡二叉树： 一直对半分数组
