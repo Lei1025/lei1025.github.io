@@ -65,3 +65,7 @@ public class Solution {
 ### 108
 
 平衡二叉树： 一直对半分数组
+
+### 202
+
+用HashSet解决重复问题
