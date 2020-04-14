@@ -30,16 +30,16 @@ title: ALL POSTS
                 <div class="post-list ">
                     <!--pin to top first-->
                     {% for post in site.posts %}
-                        {% if post.pin == true and post.project == null %}
-                            {% include post-list-item.html %}
-                        {% endif %}
+                    {% if post.pin == true and post.project == null %}
+                    {% include post-list-item.html %}
+                    {% endif %}
                     {% endfor %}
                     <!--others-->
                     {% for post in site.posts %}
-                        {% if post.pin == null and post.project == null %}
-                             {% include post-list-item.html %}
-                        {% endif %}
-                     {% endfor %}
+                    {% if post.project == null and post.pin == null or post.pin == false%}
+                    {% include post-list-item.html %}
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -62,4 +62,5 @@ title: ALL POSTS
         }
     </script>
 </body>
+
 </html>
