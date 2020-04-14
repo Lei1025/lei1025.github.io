@@ -18,6 +18,9 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime',  format:"YYYY-MM-DD" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "top", widget: "boolean", default: false}
-
+      - { label: "Mark", name: "mark", widget: "select", 
+        options: 
+            { label: "Star", value: "star" }
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: "Comment", name: "comment", widget: "boolean", default: true}
