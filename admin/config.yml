@@ -1,7 +1,8 @@
 # config.yml
 
 backend:
-  name: git-gateway
+  name: github
+  repo: Lei1025/lei1025.github.io
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
 collections:
