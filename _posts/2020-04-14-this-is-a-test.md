@@ -1,7 +1,7 @@
 ---
 layout: post
 title: this is a test
-date: 2020-04-14T21:12:36.134Z
+date: 2020-04-14
 tags:
   - tree
 pin: false
