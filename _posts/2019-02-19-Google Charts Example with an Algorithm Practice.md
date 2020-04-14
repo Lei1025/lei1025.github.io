@@ -3,22 +3,22 @@ layout: post
 title: Google Charts Example with an Algorithm Practice
 date: 2019-02-19
 tags: [js, javascript, jquery, ajax, html, css, GoogleCharts, example]
-mark: star
+starMark: true
 comments: true
 ---
 
->The reason why I choose `Google Charts` as my line chart solution is because of its clean data format and a variety of options.
+> The reason why I choose `Google Charts` as my line chart solution is because of its clean data format and a variety of options.
 
 I have to admit that `Google Charts` is not the best looking one, but it is very friendly for developers. First, the data set format always looks like a table, actually arrays in an array. Having compared with other libraries, this format is the clearest one for me.
 
 ```js
-  var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
+var data = google.visualization.arrayToDataTable([
+    ["Year", "Sales", "Expenses"],
+    ["2004", 1000, 400],
+    ["2005", 1170, 460],
+    ["2006", 660, 1120],
+    ["2007", 1030, 540],
+]);
 ```
 
 As for it's `options`, Google Charts offers a large number of options including at least everything I need.
@@ -26,49 +26,68 @@ As for it's `options`, Google Charts offers a large number of options including 
 For this case, I was required to create a line chart illustrating our servers' CPU performance in the selected time range, and the CPU usage data stores each minute.
 
 # Draft Google Line Chart
+
 ## .html
 
-Just need to create a Google Line Chart Div with some time-span selection button in `HTML` file.  
+Just need to create a Google Line Chart Div with some time-span selection button in `HTML` file.
 
-*We are using .xls transforming to .html*
-*Actually just one line for Google Chart at the bottom*
+_We are using .xls transforming to .html_
+_Actually just one line for Google Chart at the bottom_
 
 ```html
 <div id="cpudiv">
-  <div style="display: inline-block">
-    <h3>
-      <a target="blank">CPU Performance</a>
-    </h3>
-  </div>
-  <!--buttons above line chart-->
-  <div id="cpubuttons" style="display: none" class="pull-right">
-    <style>.btn:focus {outline: none;} </style>
-    <button class="btn btn-primary btn-xs dim" onclick="drawCpuChart(1)">1 H</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(3)">3 H</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(6)">6 H</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(12)">12 H</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(24)">1 D</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(72)">3 D</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(168)">1 W</button>
-    <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(336)">2 W</button>
-    <!--button click animation-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        $("button").click(function() {
-          $(this)
-            .addClass("btn-primary")
-            .removeClass("btn-success");
-          $(this)
-            .siblings()
-            .addClass("btn-success")
-            .removeClass("btn-primary");
-        });
-      });
-    </script>
-  </div>
+    <div style="display: inline-block">
+        <h3>
+            <a target="blank">CPU Performance</a>
+        </h3>
+    </div>
+    <!--buttons above line chart-->
+    <div id="cpubuttons" style="display: none" class="pull-right">
+        <style>
+            .btn:focus {
+                outline: none;
+            }
+        </style>
+        <button class="btn btn-primary btn-xs dim" onclick="drawCpuChart(1)">
+            1 H
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(3)">
+            3 H
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(6)">
+            6 H
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(12)">
+            12 H
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(24)">
+            1 D
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(72)">
+            3 D
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(168)">
+            1 W
+        </button>
+        <button class="btn btn-success btn-xs dim" onclick="drawCpuChart(336)">
+            2 W
+        </button>
+        <!--button click animation-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                $("button").click(function () {
+                    $(this).addClass("btn-primary").removeClass("btn-success");
+                    $(this)
+                        .siblings()
+                        .addClass("btn-success")
+                        .removeClass("btn-primary");
+                });
+            });
+        </script>
+    </div>
 
-  <!--Google Chart-->
-  <div id="cpu_chart" style="height:200px"></div>
+    <!--Google Chart-->
+    <div id="cpu_chart" style="height:200px"></div>
 </div>
 ```
 
@@ -82,7 +101,7 @@ First thing before coding `Javascript` is thinking about how to get, parse and c
 
 ```js
 //using ajax to fetch data then return here as globle variable
-var parentcpuxml = null; 
+var parentcpuxml = null;
 
 getxml(url, function (cpuxml) {
     var cpuxml = cpuxml.getElementsByTagName("cpu");
@@ -103,9 +122,10 @@ function getxml(url, fn) {
 }
 ```
 
-Part of `cpudata` currently looks like: 
+Part of `cpudata` currently looks like:
 
 [[datetime_1, cpuusage_1],[datetime_2, cpuusage_2],[datetime_3, cpuusage_3],......]
+
 ```
 cpudata: Array(56)
 0: (2) [Tue Mar 19 2019 20:35:08 GMT-0400 (Eastern Daylight Time), 17.69007]
@@ -120,7 +140,7 @@ cpudata: Array(56)
 
 ### Draw chart and options
 
-Using the sample code provided by Google to run the line chart. 
+Using the sample code provided by Google to run the line chart.
 
 ```js
 function drawChart() {
@@ -128,12 +148,12 @@ function drawChart() {
     google.charts.setOnLoadCallback(drawCpuChart);
 }
 
-function drawCpuChart(){
+function drawCpuChart() {
     var data = new google.visualization.DataTable();
     //add column name and data type
     data.addColumn("datetime", "Date Time");
     data.addColumn("number", "CPU Usage");
-    
+
     data.addRows(cpudata);
 
     var chart = new google.visualization.LineChart(
@@ -146,17 +166,18 @@ function drawCpuChart(){
         chartArea: { left: "5%", width: "90%", top: "5%" },
         interpolateNulls: true, //default is false, the line chart will be non-sequence.
         pointSize: 3,
-        vAxis: { //Firm the x axis from 0 to 100, otherwise it will be dynamical as y axis.
+        vAxis: {
+            //Firm the x axis from 0 to 100, otherwise it will be dynamical as y axis.
             viewWindow: {
                 min: 0,
-                max: 100
-            }
+                max: 100,
+            },
         },
         animation: {
-            startup: true,   // Need to add this for animations
+            startup: true, // Need to add this for animations
             duration: 1000,
-            easing: 'out',
-        }
+            easing: "out",
+        },
     };
     chart.draw(data, options);
 }
@@ -170,14 +191,15 @@ It seems to complete closely, but this is the beginning of this work. Because we
 
 ![](https://raw.githubusercontent.com/Lei1025/ImgRepo/master/myblog/Annotation%202019-03-21%20184959.jpg)
 
-With the wider time span selected (*skip the js code how to filter data by time range here*), the resolution for my chart is also decreased till the graphic makes no sense.
+With the wider time span selected (_skip the js code how to filter data by time range here_), the resolution for my chart is also decreased till the graphic makes no sense.
 
 # Data Processing
+
 In order to solve this problem, the first idea I came up with then gave it up immediately is to request the server for each click and filter data on database end, due to its bad user experience that users have to await response every time. As a result, I chose to download the data with the maximum time range user can choose while page loading, then filter the data by Javascript on users' computers. Unless the computer is very old, users won't feel too much delay in processing the data.
 
-*-Explain it briefly first, maybe give more details in the future-*
+_-Explain it briefly first, maybe give more details in the future-_
 
-My logic is that if the point number greater than 250, all the data will be re-calculated to 250 points with average. For example, there are 1440 CPU usage data for one day, so firstly the time span should be re-calculated from 1 minute to (1 day * 24 hr * 60 min)/250, which means only 250 values on X-Axis with even span. Then calculate the average values in between new time spans to be the new Y-Axis value. Finally, switch the line chart style to curve matching this circumstance.
+My logic is that if the point number greater than 250, all the data will be re-calculated to 250 points with average. For example, there are 1440 CPU usage data for one day, so firstly the time span should be re-calculated from 1 minute to (1 day _ 24 hr _ 60 min)/250, which means only 250 values on X-Axis with even span. Then calculate the average values in between new time spans to be the new Y-Axis value. Finally, switch the line chart style to curve matching this circumstance.
 
 > This is a great opportunity for using `recursion` method to solve a problem in the real working environment.
 
@@ -194,10 +216,10 @@ function getxml(url, fn) {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             fn(this.responseXML);
-            $('#cpuloading').hide();
-            $('#diskloading').hide();
-            $('#cpubuttons').show();
-            $('#diskbuttons').show();
+            $("#cpuloading").hide();
+            $("#diskloading").hide();
+            $("#cpubuttons").show();
+            $("#diskbuttons").show();
         }
     };
     xhttp.open("GET", url, true);
@@ -207,12 +229,14 @@ function getxml(url, fn) {
 //draw chart method
 var parentcpuxml = null; //using ajax to fetch data then return here as globle variable
 
-function drawCpuChart(hour = 1) {//by default time span is 1 hour
-    if (parentcpuxml !== null) {//avoid requesting data from server on switchting time span
+function drawCpuChart(hour = 1) {
+    //by default time span is 1 hour
+    if (parentcpuxml !== null) {
+        //avoid requesting data from server on switchting time span
         drawCpuChart_data(parentcpuxml, hour);
         return;
     }
-    var url = window.location.href.toString() + '&getcpu=1&session=readonly';
+    var url = window.location.href.toString() + "&getcpu=1&session=readonly";
     //this will return the maximum data we need-- 2 weeks
     getxml(url, function (cpuxml) {
         var cpuxml = cpuxml.getElementsByTagName("cpu");
@@ -230,15 +254,15 @@ function drawCpuChart_data(cpuxml, hour) {
         vAxis: {
             viewWindow: {
                 min: 0,
-                max: 100
-            }
+                max: 100,
+            },
         },
         animation: {
-            startup: true,   /* Need to add this for animations */
+            startup: true /* Need to add this for animations */,
             duration: 1000,
-            easing: 'out',
+            easing: "out",
         },
-        interpolateNulls: true
+        interpolateNulls: true,
     };
 
     var cpudata = [];
@@ -266,14 +290,24 @@ function drawCpuChart_data(cpuxml, hour) {
     //if number of data greater than 250, re-calculate and average data
     if (cpudata_filtertime.length > 250) {
         //curve line chart
-        options['curveType'] = 'function';
-        options['pointSize'] = 0;
+        options["curveType"] = "function";
+        options["pointSize"] = 0;
 
         //new time span
-        var increment = (cpudata_filtertime[0][0].valueOf() - cpudata_filtertime[cpudata_filtertime.length - 1][0].valueOf()) / 250;
+        var increment =
+            (cpudata_filtertime[0][0].valueOf() -
+                cpudata_filtertime[
+                    cpudata_filtertime.length - 1
+                ][0].valueOf()) /
+            250;
         var startDate = cpudata_filtertime[cpudata_filtertime.length - 1][0];
 
-        var repopulateData = function (cpudata_filtertime, startDate, increment, arr = []) {
+        var repopulateData = function (
+            cpudata_filtertime,
+            startDate,
+            increment,
+            arr = []
+        ) {
             if (cpudata_filtertime.length > 0) {
                 var newDate = new Date(startDate.valueOf() + increment);
                 var newValueList = [];
@@ -285,26 +319,32 @@ function drawCpuChart_data(cpuxml, hour) {
                         sum += newValueList[j];
                     }
                     return sum / newValueList.length;
-                }
+                };
 
-                var lastValue = cpudata_filtertime[cpudata_filtertime.length-1];//also the latest date with value cause data has been sort by data desc
+                var lastValue =
+                    cpudata_filtertime[cpudata_filtertime.length - 1]; //also the latest date with value cause data has been sort by data desc
                 while (lastValue != null && lastValue[0] <= newDate) {
-                    newValueList.push(lastValue[1]);//return value then delete
+                    newValueList.push(lastValue[1]); //return value then delete
                     cpudata_filtertime.pop();
-                    lastValue = cpudata_filtertime[cpudata_filtertime.length - 1];
+                    lastValue =
+                        cpudata_filtertime[cpudata_filtertime.length - 1];
                 }
 
                 var avgValue = getAvg(newValueList);
                 arr.push([newDate, avgValue]);
-                return repopulateData(cpudata_filtertime, newDate, increment, arr); //Recursion here
+                return repopulateData(
+                    cpudata_filtertime,
+                    newDate,
+                    increment,
+                    arr
+                ); //Recursion here
             }
             if (cpudata_filtertime.length == 0) {
-
                 return arr; //Recursion stop
             }
-        }
+        };
         cpudata = repopulateData(cpudata_filtertime, startDate, increment);
-        }
+    }
 
     var data = new google.visualization.DataTable();
     data.addColumn("datetime", "Date Time");
@@ -316,13 +356,14 @@ function drawCpuChart_data(cpuxml, hour) {
     );
     chart.draw(data, options);
 }
-
 ```
 
 ## Final View
+
 ![](https://raw.githubusercontent.com/Lei1025/ImgRepo/master/myblog/Annotation%202019-03-21%20185106.jpg)
 
 # What I learned from this case
+
 1. Got familiar with `Ajax` especially the `async` return data part.
 2. Learned the knowledge of `session` read/write permission in HTTP request( I didn't mention in this article);
 3. Become an expert on `Google Charts` library :).

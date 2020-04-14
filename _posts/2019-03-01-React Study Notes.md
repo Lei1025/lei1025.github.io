@@ -1,30 +1,34 @@
 ---
 layout: post
-title: "React Study Notes" 
+title: "React Study Notes"
 update: 2019-05-24
 tags: [react, jsx, studynotes]
-mark: star
+starMark: true
 comments: true
 ---
 
->Study notes while learning React.
+> Study notes while learning React.
 
 {% raw %}
+
 ## VS Code Shortcuts
 
-imrc --  
+imrc --
+
 ```jsx
-import React, { Component } from 'react'; 
+import React, { Component } from "react";
 ```
+
 cc --
+
 ```jsx
 class  extends Component {
     state = {  }
-    render() { 
+    render() {
         return (  );
     }
 }
- 
+
 export default ;
 ```
 
@@ -49,7 +53,7 @@ Return a random picture of 200 by 200
 Class--js = `ClassName`--jsx
 
 ```jsx
- <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+<span className={this.getBadgeClasses()}>{this.formatCount()}</span>
 ```
 
 ## Style
@@ -57,23 +61,26 @@ Class--js = `ClassName`--jsx
 ```jsx
 style = {
     fontSize: 10,
-    fontWeight:'bold'
-  };
+    fontWeight: "bold",
+};
 
-<span style={this.style}> </span>
+<span style={this.style}> </span>;
 ```
+
 <br>
 
 ```jsx
-<span style={{fontSize: 10, fontWeight:'bold'}}></span>
+<span style={{ fontSize: 10, fontWeight: "bold" }}></span>
 ```
 
 ## Quickly create new method in render()
+
 ```jsx
-  let classes = "badge m-2 ";
-  classes += (this.state.count === 0) ? "badge-warning" : "badge-primary";
+let classes = "badge m-2 ";
+classes += this.state.count === 0 ? "badge-warning" : "badge-primary";
 ```
-Select and right click, then choose `"Refactor"`. 
+
+Select and right click, then choose `"Refactor"`.
 
 Do NOT write variable and do function inside `render()` mehod.
 
@@ -83,7 +90,7 @@ Do NOT write variable and do function inside `render()` mehod.
 
 array.map(item => (//do something))
 
->each item needs a 'key' value for React
+> each item needs a 'key' value for React
 
 ```jsx
 tags: ["tag1", "tag2", "tag3"]
@@ -96,7 +103,7 @@ tags: ["tag1", "tag2", "tag3"]
 
 ## no if...else... in jsx
 
-Alternatively, use `:`  operator
+Alternatively, use `:` operator
 
 ```jsx
 classes += this.state.count === 0 ? "badge-warning" : "badge-primary";
@@ -104,7 +111,7 @@ classes += this.state.count === 0 ? "badge-warning" : "badge-primary";
 
 ### trick in js
 
-    true && false 
+    true && false
     >false
 
     true && 'Hi' ==
@@ -115,7 +122,7 @@ classes += this.state.count === 0 ? "badge-warning" : "badge-primary";
 
 ## binding event handlers
 
->This is used for when need 'this' to modify/update 'state'
+> This is used for when need 'this' to modify/update 'state'
 
 Do not write function a directly. Using arrow functions instead. Casuse `this` keyword return `undefine` in a function, and what we need is returning an object that should write inside a class or object.
 
@@ -168,7 +175,8 @@ Shortcut to get following code:
             <th></th>
         </tr>
     </thead>
-</table>;
+</table>
+;
 ```
 
 ## Passing data
@@ -179,12 +187,12 @@ Each react component has a property called `props` which basically is plain `Jav
 
 ## state vs props
 
-*`state` can only modified by its owner.
+\*`state` can only modified by its owner.
 
-*`props` is an object from parent's component and read only.
-
+\*`props` is an object from parent's component and read only.
 
 ## Lifecycle Hooks
+
 ### Mounting Phase
 
 1. `constructor` is only called once at first (before `render`), to initialize the properties in this class.
@@ -193,13 +201,13 @@ Each react component has a property called `props` which basically is plain `Jav
     constructor(props){
         super(props);
         console.log("App - Constrctor", this.props);
-        this.state =  this.props.__something___;      
+        this.state =  this.props.__something___;
     }
 ```
 
 2. `render` renders React elements from virtual DOM into brower DOM
 
-3.  `componentDidMount` is call after conponent is rendered into DOM, good place to do AJAX call to get data from server
+3. `componentDidMount` is call after conponent is rendered into DOM, good place to do AJAX call to get data from server
 
 ```jsx
     componentDidMount(){
@@ -207,6 +215,7 @@ Each react component has a property called `props` which basically is plain `Jav
         this.state(_____)
     }
 ```
+
 ### Updating Phase
 
 `componentDidUpdated` is called AFTER DOM updated, used to do something if needed following component changed
@@ -218,9 +227,9 @@ Each react component has a property called `props` which basically is plain `Jav
         }
     }
 ```
+
 ### Unmounting Phase
 
 `componentWillUnmount` is called BEFORE a component is removed from DOM, used to clean up set up timers or listener thoese staying in memory, otherwise they will be end up with memory leaks.
-
 
 {% endraw %}
