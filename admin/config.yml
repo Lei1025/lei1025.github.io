@@ -24,4 +24,3 @@ collections:
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: "Comment", name: "comment", widget: "boolean", default: true}
-      - { label: "Priority", name: "priority",  widget: "object"}
