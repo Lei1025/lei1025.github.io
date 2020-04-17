@@ -1,8 +1,16 @@
 ---
 layout: post
-title: "How to Install and Setup Autoprefixer for Jekyll" 
-tags: [jekyll, githubPage, css, autoprefixer, plugin, install]
+title: How to Install and Setup Autoprefixer for Jekyll
+tags:
+  - jekyll
+  - GithubPage
+  - css
+  - autoprefixer
+  - plugin
+  - install
 comments: true
+date: ""
+comment: true
 ---
 
 > One Method to upgrade CSS compatibility  for Jekyll to adpat all sorts of browsers.
