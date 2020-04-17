@@ -9,7 +9,6 @@ tags:
   - TOC
 comments: true
 date: ""
-comment: true
 ---
 
 >one page navigation, table of content, vertical navigation, scroll navigation
