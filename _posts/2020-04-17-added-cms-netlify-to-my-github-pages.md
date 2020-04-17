@@ -8,7 +8,7 @@ tags:
   - Netlify
 pin: false
 starMark: false
-comment: true
+comments: true
 ---
 > Now, I can edit my blog everywhere instead of commit and push from my own laptop only.
 
