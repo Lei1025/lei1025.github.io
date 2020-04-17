@@ -9,8 +9,6 @@ tags:
   - plugin
   - install
 comments: true
-date: ""
-comment: true
 ---
 
 > One Method to upgrade CSS compatibility  for Jekyll to adpat all sorts of browsers.

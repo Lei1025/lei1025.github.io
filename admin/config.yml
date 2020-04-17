@@ -22,4 +22,4 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Update Date', name: 'date', widget: 'datetime', default: '', timeFormat: false, dateFormat: 'YYYY-MM-DD', required: false}
       - { label: "Star Mark", name: "starMark", widget: "boolean", default: false, required: false}
-      - { label: "Comment", name: "comment", widget: "boolean", default: true}
+      - { label: "Allow Comments", name: "comments", widget: "boolean", default: true}
