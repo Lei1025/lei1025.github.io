@@ -1,9 +1,18 @@
 ---
 layout: post
-title: "Implement Sorting Tags by Name and Value in Jekyll"
-tags: [jekyll, githubPage, liquid, sort, tag, javascript, js]
+title: Implement Sorting Tags by Name and Value in Jekyll
+tags:
+  - jekyll
+  - GithubPage
+  - liquid
+  - sort
+  - tag
+  - javascript
+  - js
 starMark: true
 comments: true
+date: ""
+comment: true
 ---
 
 > Methods of sorting tags order by name in ascending and by counts/numbers in descending, plus showing posts correspond to their tags.
