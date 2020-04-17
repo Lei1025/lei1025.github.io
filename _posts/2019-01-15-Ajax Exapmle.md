@@ -1,8 +1,16 @@
 ---
 layout: post
 title: Ajax Exapmle
-tags: [js, javascript, jquery, ajax, post, get, form, submit,example]
+tags:
+  - js
+  - javascript
+  - jquery
+  - ajax
+  - submit
+  - example
 comments: true
+date: ""
+comment: true
 ---
 
 > It always takes me a long time to find an exactly example what I wannt for Jquery AJAX.  Here I will collect some example I used frequently.
