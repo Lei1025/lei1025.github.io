@@ -11,8 +11,6 @@ tags:
   - js
 starMark: true
 comments: true
-date: ""
-comment: true
 ---
 
 > Methods of sorting tags order by name in ascending and by counts/numbers in descending, plus showing posts correspond to their tags.
