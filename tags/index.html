@@ -5,7 +5,7 @@ description: "An archive of posts sorted by tag."
 comments: false
 ---
 <div style="text-align:right">
-  <button class="btn hover-btn" onclick="sortByName()"><span><i class="fas fa-sort-alpha-down"></i>Name</span></button><button class="btn hover-btn" onclick="sortByNum()"><span><i class="fas fa-sort-amount-down"></i>Count</span></button>
+  <button class="btn hover-btn" onclick="sortByName()"><span><i class="fas fa-sort-alpha-down"></i>Name</span></button><button class="btn hover-btn actived" onclick="sortByNum()"><span><i class="fas fa-sort-amount-down"></i>Count</span></button>
 </div>
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
@@ -22,9 +22,9 @@ comments: false
 </ul>
 
 <article id="stared" style="display:none">
-  <h2 class="tag-heading tag-name"><i class="fas fa-fw fa-star"></i></h2>
+  <h2 class="tag-heading tag-name"><a href="https://llei.netlify.app/admin" style=":hover {cursor: context-menu}" target="_blank"><i class="fas fa-fw fa-star"></i></a></h2>
   <ul>
-    {% for post in site.posts %}{% if post.starMark == "star" %}
+    {% for post in site.posts %}{% if post.starMark == true %}
     <li class="entry-title">
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="drop-down-underline ripple-btn">{{ post.date | date: '%m/%d/%Y' }} ---- {{ post.title }}</a>
       <span class="tag-archive-item">
