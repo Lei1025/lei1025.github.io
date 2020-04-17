@@ -4,7 +4,7 @@ title: Added CMS (Netlify) to my Github Pages
 date: 2020-04-17T22:00:40.823Z
 tags:
   - CMS
-  - GithubPages
+  - GithubPage
   - Netlify
 pin: false
 starMark: false
