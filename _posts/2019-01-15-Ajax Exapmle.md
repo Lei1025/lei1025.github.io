@@ -9,6 +9,7 @@ tags:
   - submit
   - example
 comments: true
+date: 2019-01-15
 ---
 
 > It always takes me a long time to find an exactly example what I wannt for Jquery AJAX.  Here I will collect some example I used frequently.

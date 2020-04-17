@@ -3,6 +3,7 @@ layout: post
 title: "Async Example Using 'Task<>' for C# with Brief Analysis"
 tags: [c#, .net, async, example]
 comments: true
+date: 2019-04-02
 ---
 
 > Implement Async by using Task<> provided by .Net 4.0 or later

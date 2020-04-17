@@ -5,6 +5,7 @@ update: 2019-05-24
 tags: [react, jsx, studynotes]
 starMark: true
 comments: true
+date: 2019-03-31
 ---
 
 > Study notes while learning React.

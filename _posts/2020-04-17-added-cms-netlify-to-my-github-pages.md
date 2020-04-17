@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Added CMS (Netlify) to my Github Pages
-date: 2020-04-17T22:00:40.823Z
+date: 2020-04-17
 tags:
   - CMS
   - GithubPage

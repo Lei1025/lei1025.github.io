@@ -3,6 +3,7 @@ layout: post
 title: "Implement 'Sleep' in JavaScript with a Time Display Example"
 tags: [javaScript, js, setInterval, example]
 comments: true
+date: 2019-02-02
 ---
 
 

@@ -16,11 +16,11 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD', format: 'YYYY-MM-DD' }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Update Date', name: 'date', widget: 'datetime', default: '', timeFormat: false, dateFormat: 'YYYY-MM-DD', required: false}
+      - { label: 'Update Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
       - { label: "Star Mark", name: "starMark", widget: "boolean", default: false, required: false}
       - { label: "Allow Comments", name: "comments", widget: "boolean", default: true}
   - name: 'draft'

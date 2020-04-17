@@ -4,6 +4,7 @@ title: Prevent Triggering Parent's onClick Event in JS
 tags: [js, javascript, regex]
 update: 2019-04-16
 comments: true
+date: 2019-03-16
 ---
 >One method to disable child nodes inherit parent's onclick event in JS alone with one Js regex practice.
 

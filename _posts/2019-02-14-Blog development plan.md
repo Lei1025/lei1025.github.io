@@ -1,8 +1,8 @@
 ---
-update: 2019-04-28T00:00:00.000Z
+update: 2019-04-28
 layout: post
 title: Development Plan for My Blog
-date: 2019-02-14T05:00:00.000Z
+date: 2019-02-14
 comments: true
 tags:
   - GithubPage

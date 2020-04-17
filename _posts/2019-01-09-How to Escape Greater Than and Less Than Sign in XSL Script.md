@@ -4,6 +4,7 @@ title: How to Escape Greater Than (>) and Less Than (<) Sign in XSL Script
 tags: [js, javascript, css, XSL, script]
 starMark: true
 comments: true
+date: 2019-01-09
 ---
 
 > This is the solution to embed '>' and '<' in 'Javascript' of 'XSL' file
