@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Implement Scroll Spy in Jekyll without Bootstrap" 
-tags: [jekyll, githubPage, scrollspy, scrollnav,TOC]
+title: Implement Scroll Spy in Jekyll without Bootstrap
+tags:
+  - jekyll
+  - GithubPage
+  - scrollspy
+  - scrollnav
+  - TOC
 comments: true
+date: ""
+comment: true
 ---
 
 >one page navigation, table of content, vertical navigation, scroll navigation
