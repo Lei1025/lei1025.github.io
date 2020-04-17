@@ -5,7 +5,7 @@ title: Development Plan for My Blog
 date: 2019-02-14T05:00:00.000Z
 comments: true
 tags:
-  - github pages
+  - GithubPage
   - jekyll
 pin: true
 comment: true
