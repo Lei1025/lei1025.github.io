@@ -20,13 +20,13 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Update Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
+      - { label: 'Update Date', name: 'update', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
       - { label: "Star Mark", name: "starMark", widget: "boolean", default: false, required: false}
       - { label: "Allow Comments", name: "comments", widget: "boolean", default: true}
   - name: 'draft'
     label: 'Draft'
     folder: 'drafts/'
-    sort: "date:desc" # Default is title:asc
+    sort: "date:asc" # Default is title:asc
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     meta: # Meta data fields. Just like fields, but without any preview element
@@ -38,6 +38,6 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Update Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
+      - { label: 'Update Date', name: 'update', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
       - { label: "Star Mark", name: "starMark", widget: "boolean", default: false, required: false}
       - { label: "Allow Comments", name: "comments", widget: "boolean", default: true}
