@@ -1,5 +1,5 @@
 // dl-menu options
-$(function() {
+$(function () {
     $("#dl-menu").dlmenu({
         animationClasses: {
             classin: "dl-animate-in",
@@ -8,7 +8,7 @@ $(function() {
     });
 });
 // Need this to show animation when go back in browser
-window.onunload = function() {};
+window.onunload = function () { };
 
 // Add lightbox class to all image links
 $(
@@ -16,14 +16,16 @@ $(
 ).addClass("image-popup");
 
 // FitVids options
-$(function() {
+$(function () {
     $(".content").fitVids();
 });
 
+setTimeout(dismissPreloader, 5000);//if loading over 5s, dismiss pre-loader first
+
 // All others
-$(document).ready(function() {
+$(document).ready(function () {
     //preloader animation
-    preloader();
+    dismissPreloader();
     // go up button
     goUpBtn();
     //image pop up
@@ -33,7 +35,7 @@ $(document).ready(function() {
 });
 
 //loader
-function preloader() {
+function dismissPreloader() {
     $("#preloader").hide();
     $(".loading").css("visibility", "visible");
 
@@ -41,17 +43,15 @@ function preloader() {
     $(".post-title").addClass("animated fadeIn");
     $(".post-content").addClass("animated bounceInUp");
 
-    window.onload = function(){
-        $("body").removeClass('stop-scrolling');
-    }   
+    $("body").removeClass('stop-scrolling');
 }
 
 //material button function
-(function($) {
-    $.fn.rkmd_rippleEffect = function() {
+(function ($) {
+    $.fn.rkmd_rippleEffect = function () {
         var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
         btn = $(this).not("[disabled], .disabled");
-        btn.on("mousedown", function(e) {
+        btn.on("mousedown", function (e) {
             self = $(this);
             // Disable right click
             if (e.button === 2) {
@@ -77,7 +77,7 @@ function preloader() {
                     left: rippleX + "px"
                 })
                 .addClass("animated");
-            setTimeout(function() {
+            setTimeout(function () {
                 ripple.remove();
             }, 800);
         });
