@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Amazon Product Recommendation System
-date: 2020-04-18
+date: 2020-04-17
 tags:
   - knn
 pin: false
-update: 2020-04-18
+update: ""
 starMark: false
 comments: true
 ---
@@ -31,7 +31,7 @@ Even Binary Search wins at average Time Complexity, O(log2N), but it needs data 
 
 [Amazon Review Data (2018)](https://nijianmo.github.io/amazon/index.html)
 
-In my demo, I used `All Beauty - metadata` in Per-category data, since it is large enough for testing result and also small enough to run fast in my PC.
+In my demo, I used `All Beauty - metadata` in Pre-category data, since it is large enough for testing result and also small enough to run fast in my PC.
 
 # Code Explanation
 
