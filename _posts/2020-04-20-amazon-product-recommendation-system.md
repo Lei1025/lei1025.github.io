@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Amazon-Product-Recommendation-System
-date: 2020-04-19
+title: Amazon Product Recommendation System
+date: 2020-04-19T00:00:00.000Z
 tags:
   - Java
   - KNN
