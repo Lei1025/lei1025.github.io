@@ -9,14 +9,6 @@ update: ""
 starMark: false
 comments: true
 ---
-## Search Algorithm Choice
-
-### Linear Search VS Binary Search
-
-[Link](https://techdifferences.com/difference-between-linear-search-and-binary-search.html)
-
-Even Binary Search wins at average Time Complexity, O(log2N), but it needs data sorted first and takes extra space in this case. Thus, my choice goes to Linear Search.
-
 # Introduction
 
 ![Screenshot](/assets/uploads/5e191dac7cb767d152d97ae9a02bf28.png)
@@ -48,7 +40,7 @@ Original Source Data Snippet:
 
 Ideally, it is in need of `asin`, `price`, `rank`, `review rate`, but review data is in another much larger `review data` file, not given average rate but each rate of every user. Therefore, I just wrote the code cleaning data like below:
 
-![](/assets/uploads/20200418215012.png)
+![](/assets/uploads/20200418215012.png =250px)
 
 There are multiple way to address data, such as using database(SQL) or filtering in Excel. I wrote a `preProcessMetaFile` method in Recommendation.java to clean my data to a `.csv` file, which is convenient for using `weka` library directly.
 
