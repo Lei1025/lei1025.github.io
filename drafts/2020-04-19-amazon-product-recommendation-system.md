@@ -26,7 +26,7 @@ comments: true
 
 In my demo, I used `All Beauty - metadata` in Pre-category data, since it is large enough for testing result and also small enough to run fast in my PC.
 
-# Code Explanation
+# Recommendation Principle
 
 Original Source Data Snippet:
 
@@ -40,16 +40,16 @@ Original Source Data Snippet:
 
 Ideally, it is in need of `asin`, `price`, `rank`, `review rate`, but review data is in another much larger `review data` file, not given average rate but each rate of every user. Therefore, I just wrote the code cleaning data like below:
 
-![](/assets/uploads/20200418215012.png =250px)
+![](/assets/uploads/20200418215012.png)
 
 There are multiple way to address data, such as using database(SQL) or filtering in Excel. I wrote a `preProcessMetaFile` method in Recommendation.java to clean my data to a `.csv` file, which is convenient for using `weka` library directly.
 
-# Start KNN
 ```java
 IBk ibk = new IBk();
 ibk.getNearestNeighbourSearchAlgorithm().setDistanceFunction(new EuclideanDistance());// Use Euclidean Distance
 ibk.setKNN(4);// need X recommendation, result must include itself, so add 1 neighbor
 ```
+
 `IBK` is "K-nearest neighbours classifier" of weka library.
 
 Compare to [this example](https://towardsdatascience.com/prototyping-a-recommender-system-step-by-step-part-1-knn-item-based-collaborative-filtering-637969614ea), the author mentioned:
