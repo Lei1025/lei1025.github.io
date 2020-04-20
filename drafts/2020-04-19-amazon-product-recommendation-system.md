@@ -28,7 +28,7 @@ In my demo, I used `All Beauty - metadata` in Pre-category data, since it is lar
 
 # Recommendation Principle
 
-Original Source Data Snippet:
+## Original Source Data Snippet:
 
 ```json
 {"title": "Workout Headphones by Arena Essentials", "image": ["https://images-na.ssl-images-amazon.com/images/I/61BM8VG0BCL._SS40_.jpg", "https://images-na.ssl-images-amazon.com/images/I/61YKSNFYPPL._SS40_.jpg"], "brand": "HarperCollins", "rank": "3,235,148inBeautyamp;PersonalCare(", "main_cat": "All Beauty", "asin": "0061073717"}
@@ -44,6 +44,7 @@ Ideally, it is in need of `asin`, `price`, `rank`, `review rate`, but review dat
 
 There are multiple way to address data, such as using database(SQL) or filtering in Excel. I wrote a `preProcessMetaFile` method in Recommendation.java to clean my data to a `.csv` file, which is convenient for using `weka` library directly.
 
+## KNN Algorithm
 ```java
 IBk ibk = new IBk();
 ibk.getNearestNeighbourSearchAlgorithm().setDistanceFunction(new EuclideanDistance());// Use Euclidean Distance
@@ -56,7 +57,7 @@ Compare to [this example](https://towardsdatascience.com/prototyping-a-recommend
 
 > Euclidean distance is unhelpful in high dimensions because all vectors are almost equidistant to the search query vector (target movie’s features). Instead, we will use cosine similarity for nearest neighbor search.
 
-I only have 2 dimensions -- price and rank, at most to add one more --`review`. Therefore Euclidean Distance should implement in `KNN`. (It is also the default distance function in  `IBK`, do not need the configuration like I did.)
+I only have 2 dimensions -- price and rank, at most to add one more --`review`. Therefore `Euclidean Distance` should implement in `KNN`. (It is also the default distance function in  `IBK`, do not need the configuration like I did.)
 
 If given a product's price and rank, KNN will find the K nearest product. For example, K is set to 1, price is 10 and rank is 430,000, it may find the product in row 5 which is the most similar one. By default, IBK class will find the closest one.
 
