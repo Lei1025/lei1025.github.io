@@ -8,7 +8,7 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
-    sort: "date:desc" # Default is title:asc
+    sort: "date:asc" # Default is title:asc
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     meta: # Meta data fields. Just like fields, but without any preview element
