@@ -7,7 +7,7 @@ tags:
   - AWS
   - ElasticBeanstalk
   - Domain
-update: 2020-04-23
+update: ""
 comments: true
 ---
 
