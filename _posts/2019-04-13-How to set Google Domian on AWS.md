@@ -1,9 +1,14 @@
 ---
 layout: post
-title: "How to use Google Domain on AWS(Elastic Beanstalk)"
-tags: [Google, AWS, ElasticBeanstalk, Domain]
+title: How to configure Google Domain on AWS(Elastic Beanstalk)
+date: 2019-04-13T00:00:00.000Z
+tags:
+  - Google
+  - AWS
+  - ElasticBeanstalk
+  - Domain
+update: 2020-04-23
 comments: true
-date: 2019-04-13
 ---
 
 > One example that how to configure a third-pard provider domain on AWS
