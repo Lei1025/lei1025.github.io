@@ -20,7 +20,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Update Date', name: 'update', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
+      - { label: 'Update Date', name: 'update', widget: 'datetime', default: "", timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
       - { label: "Star Mark", name: "starMark", widget: "boolean", default: false, required: false}
       - { label: "Allow Comments", name: "comments", widget: "boolean", default: true}
   - name: 'draft'
@@ -38,6 +38,6 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Update Date', name: 'update', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
+      - { label: 'Update Date', name: 'update', widget: 'datetime', default: "", timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
       - { label: "Star Mark", name: "starMark", widget: "boolean", default: false, required: false}
       - { label: "Allow Comments", name: "comments", widget: "boolean", default: true}
