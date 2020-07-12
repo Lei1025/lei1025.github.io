@@ -17,7 +17,7 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD', format: 'YYYY-MM-DD' }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags (Separate by comma(,) and all in lowercase)", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Update Date', name: 'update', widget: 'datetime', default: "", timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
@@ -35,7 +35,7 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', timeFormat: false, dateFormat: 'YYYY-MM-DD', format: 'YYYY-MM-DD' }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags (Separate by comma(,) and all in lowercase)", name: "tags", widget: "list" }
       - { label: "Pin to Top", name: "pin", widget: "boolean", default: false, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Update Date', name: 'update', widget: 'datetime', default: "", timeFormat: false, dateFormat: 'YYYY-MM-DD',  format: 'YYYY-MM-DD', required: false}
