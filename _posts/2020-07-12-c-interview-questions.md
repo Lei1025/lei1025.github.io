@@ -3,8 +3,8 @@ layout: post
 title: C# Interview Questions
 date: 2020-07-12
 tags:
-  - C#
-  - Interview
+  - c#
+  - interview
   - studynotes
 pin: false
 starMark: true
