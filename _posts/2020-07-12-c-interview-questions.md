@@ -17,14 +17,6 @@ comments: true
 * (table of content)
 {:toc}
 
-
-> Tips: 
->
-> To compose a decent answer, in my view, it should answer 
-> 1. what it is -- interpreting the jargon（专业术语）first
-> 2. when use it -- giving example with a detailed situation where you did or you should use
-> 3. why it is -- taking about some advantages or disadvantages better comparing with another related one(possibly it is the next question, good to answer it in advance)
-
 ## Basic Concepts
 
 ### Constructor
@@ -929,3 +921,10 @@ class Subclass2 : Subclass1 {
 ```
 
 [Ref](https://stackoverflow.com/questions/4152049/sealed-method-in-c-sharp)
+
+> Tips: 
+>
+> To compose a decent answer, in my view, it should answer 
+> 1. what it is -- interpreting the jargon（专业术语）first
+> 2. when use it -- giving example with a detailed situation where you did or you should use
+> 3. why it is -- taking about some advantages or disadvantages better comparing with another related one(possibly it is the next question, good to answer it in advance)
