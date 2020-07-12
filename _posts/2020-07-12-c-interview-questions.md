@@ -11,11 +11,13 @@ update: ""
 starMark: true
 comments: true
 ---
+> This is C# interview notes which did me a great favor and successfully got a job offer
+>
+
 * (table of content)
 {:toc}
 
-> This is C# interview notes which did me a great favor and successfully got a job offer
->
+
 > Tips: 
 >
 > To compose a decent answer, in my view, it should answer 
