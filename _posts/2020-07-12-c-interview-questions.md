@@ -13,6 +13,7 @@ comments: true
 ---
 > This is C# interview notes which did me a great favor and successfully got a job offer
 >
+> ▲ means waiting to be completed
 
 * (table of content)
 {:toc}
