@@ -11,14 +11,11 @@ update: ""
 starMark: true
 comments: true
 ---
-> This is C# interview notes which did me a great favor and successfully got a job offer
-
-> Tips: 
-
-> To compose a decent answer, in my view, it should answer what it is -- interpreting the jargon（专业术语）first, when use it -- giving example with a detailed situation where you did or you should use, why it is -- taking about some advantages or disadvantages better comparing with another related one(possibly it is the next question, good to answer it in advance)
-
-
 * {:toc}
+
+> This is C# interview notes which did me a great favor and successfully got a job offer
+> Tips: 
+> To compose a decent answer, in my view, it should answer what it is -- interpreting the jargon（专业术语）first, when use it -- giving example with a detailed situation where you did or you should use, why it is -- taking about some advantages or disadvantages better comparing with another related one(possibly it is the next question, good to answer it in advance)
 
 ## Basic Concepts
 
