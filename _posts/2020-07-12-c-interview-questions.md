@@ -10,7 +10,7 @@ pin: false
 starMark: true
 comments: true
 ---
-1.
+1. The generated Toc will be an ordered list
 {:toc}
 
 ## Basic Concepts
