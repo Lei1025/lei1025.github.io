@@ -11,7 +11,8 @@ update: ""
 starMark: true
 comments: true
 ---
-* {:toc}
+* (table of content)
+{:toc}
 
 > This is C# interview notes which did me a great favor and successfully got a job offer
 > Tips: 
