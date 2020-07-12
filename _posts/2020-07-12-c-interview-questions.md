@@ -7,10 +7,10 @@ tags:
   - Interview
   - studynotes
 pin: false
-update: ""
 starMark: true
 comments: true
 ---
+{:toc}
 ## Basic Concepts
 
 ### Constructor
